@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>EMWG TEST</title>
+<title>Database of State Water Policies Affecting Energy</title>
 <script>
 paceOptions = {
   ghostTime: 1200,
@@ -18,81 +18,93 @@ paceOptions = {
 <script src="js/pace.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:400,400i,700,700i" rel="stylesheet">
 <link href="styles.css" rel="stylesheet" media="screen">
-<link href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
 <link href="jquery.dataTables.yadcf.css" rel="stylesheet">
-<link href="buttons.dataTables.min.css" rel="stylesheet">
+<link href="buttons.1.3.1.dataTables.min.css" rel="stylesheet">
 <link href="yadcf-master/select2.css" rel="stylesheet">
 <link href="jquery-ui-1.12.0.custom/jquery-ui.min.css" rel="stylesheet">
 <link href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
 <link href="css/custom.css" rel="stylesheet">
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
 <script src="src/tabletop.js"></script>
 <script src="handlebars-v4.0.5.js"></script>
 <script src="underscore.js"></script>
-<script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
 <script src="jquery.dataTables.yadcf.js"></script>
-<script src="dataTables.buttons.min.js"></script>
-<script src="buttons.colVis.min.js"></script>
+<script src="dataTables.buttons.1.3.1.min.js"></script>
+<script src="buttons.colVis.1.3.1min.js"></script>
 <script src="yadcf-master/select2.js"></script>
-
-
 </head>
 
 <body>
 <div class="globalWrapper">
-
-<div id="masthead">
-	<div class="inner">
-		<header>
-			<h1>Database of U.S. State-Level Water Policies and Programs Affecting Energy Systems</h1>
-			<h2>U.S. Department of Energy, Office of Energy Policy and Systems Analysis</h2>    
-			
-		</header>
-		<nav>
-			<ul>
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#" class="showOverview">Overview</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#glossary">Glossary</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+	<div id="masthead">
+		<div class="inner">
+			<header>
+				<h1>Database of U.S. State-Level Water Policies and Programs Affecting Energy Systems <strong>BETA</strong></h1>
+				<h2>U.S. Department of Energy, Office of Energy Policy and Systems Analysis</h2>
+				<p><strong>IMPORTANT</strong>: This is a draft version of the database released for testing and <a href="mailto:Samuel.Bockenhauer@Hq.Doe.Gov" target="_blank">feedback</a>. </p>
+			</header>
+			<nav>
+				<ul>
+					<!-- <li class="active"><a href="#">Home</a></li> -->
+					<li><a href="#" class="showOverview">Overview</a></li>
+					<!-- <li><a href="#">Maps</a></li> -->
+					<li><a href="#glossary">Glossary</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
+	<!-- /#masthead -->
 	
-</div><!-- /#masthead -->
-
-
-<div id="overviewWrap" class="inner">
-
-	<div id="overview">
-    	<div id="overviewLeft">
-        	<div class="inner">
-                <h2>Overview</h2>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>    
-                <div class="select2-container select2-container-multi">
-                <select class="select2-input select2-default">
-                    <option>Jurisdiction</option>
-                </select>
-                </div>    
-                <div class="select2-container select2-container-multi">
-                <select class="select2-input select2-default">
-                    <option>State</option>
-                </select>
-                </div>    
-                <div class="select2-container select2-container-multi">
-                <select class="select2-input select2-default">
-                    <option>Type</option>
-                </select>
-                </div>            
-            </div>
-            
-        </div>
-        <!--
+	<div id="overviewWrap" class="inner">
+		<div id="overview">
+			<div id="overviewLeft">
+				<div class="inner">
+					<h2>Overview</h2>
+					<p>This database provides a comprehensive source of key information about state-level water policies and programs that are relevant to energy production and use in the United States. It is envisioned that this database could be used to inform policy analysis, communications, There are more than 1,700 entries in the database, including:</p>
+					<ul>
+						<li>Policies affecting surface water and groundwater rights</li>
+						<li>State and national pollutant discharge elimination system (PDES) permitting programs</li>
+						<li>Underground injection control permitting for the oil and gas sector</li>
+						<li>Water quality standards</li>
+						<li>Hydraulic fracturing water regulations</li>
+						<li>River and/or dam operations</li>
+						<li>Water regulations impacting electric generation</li>
+					</ul>
+					<p>Each entry provides links to the policy/program website and contact information for more details.</p>
+					<p>The full database is also downloadable in <a href="https://docs.google.com/spreadsheets/d/1xQ5IjvU6H6LOqtYaJhiZo93lq5J6N0xiViZSEZpHQd4/edit?usp=sharing" target="_blank">spreadsheet format</a>.</p>
+					<!-- 
+					<p>Explore the data by using the filters below.</p>
+					<div class="select2-container select2-container-multi">
+						<div class="yadcf-filter-wrapper">
+							
+							<select multiple="" data-placeholder="Select values" class="yadcf-filter select2-offscreen" onchange="yadcf.doFilterMultiSelect(this, '-searchable-table', 2, 'contains');" onkeydown="yadcf.preventDefaultForEnter(event);" onmousedown="yadcf.stopPropagation(event);" onclick="yadcf.stopPropagation(event);" tabindex="-1">
+								<option value="Federal">Federal</option>
+								<option value="Local">Local</option>
+								<option value="Regional">Regional</option>
+								<option value="State">State</option>
+							</select>
+							<button type="button" onmousedown="yadcf.stopPropagation(event);" onclick="yadcf.stopPropagation(event);yadcf.doFilter('clear', '-searchable-table', 2); return false;" class="yadcf-filter-reset-button">x</button>
+						</div>
+					</div>
+					<div class="select2-container select2-container-multi">
+						<select class="select2-input select2-default">
+							<option>State</option>
+						</select>
+					</div>
+					<div class="select2-container select2-container-multi">
+						<select class="select2-input select2-default">
+							<option>Type</option>
+						</select>
+					</div>
+					-->
+				</div>
+			</div>
+			<!--
         <div id="external_filter_container_wrapper">
         	<div id="some_data" class="hide"></div>
         </div>
@@ -101,15 +113,12 @@ paceOptions = {
             <div onclick="myPillFilter('Maryland')">Maryland</div>
             <div onclick="myPillFilter('California')">California</div>
 		</div> -->
-        <div id="overviewRight">        
-        	<div id="vmap"></div>
-        </div>
-		<a href="#" class="toggleDiv">Hide<span class="icon-chevron-up"></span></a>
-    </div>
-    
-    
-</div>
-<script type="text/javascript">
+			<div id="overviewRight">
+				<div id="vmap"></div>
+			</div>
+			<a href="#" class="toggleDiv">Hide<span class="icon-chevron-up"></span></a> </div>
+	</div>
+	<script type="text/javascript">
 
 
 $(".toggleDiv").click(function() {
@@ -127,71 +136,65 @@ $(".showOverview").click(function(){
 });
 
 </script>
-
-
-
-<table id="searchable-table" cellpadding="5" cellspacing="0" border="0" width="100%"  class="display">
-	<thead>    
-        <tr>
-            <th>Name</th>
-            <th>State</th>
-            <th>Jurisdiction</th>
-            <th>Type</th>
-            <th>Water Rights Doctrine</th>
-            <th>Regulatory Authority</th>
-            <th>Applicable Waterbody Types</th>
-            <th class="secondary">Measured Area</th>
-            <th class="secondary">Attribute</th>
-            <th class="secondary">Unit</th>
-            <th class="secondary">Jan</th>
-            <th class="secondary">Feb</th>
-            <th class="secondary">Mar</th>
-            <th class="secondary">Apr</th>
-            <th class="secondary">May</th>
-            <th class="secondary">Jun</th>
-            <th class="secondary">Jul</th>
-            <th class="secondary">Aug</th>
-            <th class="secondary">Sep</th>
-            <th class="secondary">Oct</th>
-            <th class="secondary">Nov</th>
-            <th class="secondary">Dec</th> 														
-        </tr>
-    </thead>
-    <tbody id="content"></tbody>
-    <tfoot id="selectColumns">
-    	<tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </tfoot>
-</table>
-
-<div id="loading"></div>
-<footer>
-	<p>Copyright &copy; 2016</p>
-    <small>Photograph by <a href="https://www.flickr.com/photos/lng0004/9731936134/in/photolist-fPYHyj-bB7cxt-nAkuos-hSkW9j-d9X6nB-dmTB3w-ieL4Js-avnYB5-nQJEKq-oU8SML-bukFcS-nmFVCB-mu5at6-5DiCwm-8gUb8B-5X7sgo-3tgEQW-3XivvG-6swjvL-oGXNQ2-adjxUn-kxFhw4-aWvdR8-bd5peT-kfmx5d-aWvebR-8CD8cs-9Aupc9-aWveNZ-nrA5q5-nrzZ2k-bxZmo6-agp9Dx-ec4Vqm-kPUmvz-dXJeVo-e3GmYp-567oZm-doNK6C-nyKcze-34cybZ-Jmcszf-fpZ4F5-arnNj6-7Zn1FA-atqydq-5TFksA-5ta65F-cWkn4b-H1SkmF" target="_blank">Linh Nguyen</a></small>
-</footer>
-<script id="datatable-template" type="text/x-handlebars-template">
+	<table id="searchable-table" cellpadding="5" cellspacing="0" border="0" width="100%"  class="display">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>State</th>
+				<th>Jurisdiction</th>
+				<th>Type of Policy or Program</th>
+				<th>Water Rights Doctrine</th>
+				<th>Applicable Waterbody Types</th>
+				<th class="secondary">Measured Area</th>
+				<th class="secondary">Attribute</th>
+				<th class="secondary">Unit</th>
+				<th class="secondary">Jan</th>
+				<th class="secondary">Feb</th>
+				<th class="secondary">Mar</th>
+				<th class="secondary">Apr</th>
+				<th class="secondary">May</th>
+				<th class="secondary">Jun</th>
+				<th class="secondary">Jul</th>
+				<th class="secondary">Aug</th>
+				<th class="secondary">Sep</th>
+				<th class="secondary">Oct</th>
+				<th class="secondary">Nov</th>
+				<th class="secondary">Dec</th>
+			</tr>
+		</thead>
+		<tbody id="content">
+		</tbody>
+		<tfoot id="selectColumns">
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</tfoot>
+	</table>
+	<div id="loading"></div>
+	<footer>
+		<p>Copyright &copy; 2016</p>
+		<small>Photograph by <a href="https://www.flickr.com/photos/lng0004/9731936134/in/photolist-fPYHyj-bB7cxt-nAkuos-hSkW9j-d9X6nB-dmTB3w-ieL4Js-avnYB5-nQJEKq-oU8SML-bukFcS-nmFVCB-mu5at6-5DiCwm-8gUb8B-5X7sgo-3tgEQW-3XivvG-6swjvL-oGXNQ2-adjxUn-kxFhw4-aWvdR8-bd5peT-kfmx5d-aWvebR-8CD8cs-9Aupc9-aWveNZ-nrA5q5-nrzZ2k-bxZmo6-agp9Dx-ec4Vqm-kPUmvz-dXJeVo-e3GmYp-567oZm-doNK6C-nyKcze-34cybZ-Jmcszf-fpZ4F5-arnNj6-7Zn1FA-atqydq-5TFksA-5ta65F-cWkn4b-H1SkmF" target="_blank">Linh Nguyen</a></small> </footer>
+	<script id="datatable-template" type="text/x-handlebars-template">
 		{{#each elements}}
             <tr>
 				
@@ -235,9 +238,9 @@ $(".showOverview").click(function(){
 </td>
 <td data-title="State:">{{State}}</td>
 <td data-title="Jurisdiction:">{{Jurisdiction}}</td>
-<td data-title="Type:">{{Type}}</td>
+<td data-title="Type-of-Policy-or-Program:">{{Type-of-Policy-or-Program}}</td>
 <td data-title="Water Rights Doctrine:">{{Water-rights-doctrine}}</td>
-<td data-title="Regulatory Authority:">{{Regulatory-authority}}</td>
+
 <td data-title="Applicable-waterbody-types">{{Applicable-waterbody-types}}</td>
 <td data-title="Measured-area:">{{Measured-area}}</td>
 <td data-title="Attribute:">{{Attribute}}</td>
@@ -259,14 +262,9 @@ $(".showOverview").click(function(){
 		{{/each}}
 			
 
-</script>
-
-
-
-<script src="datatable-tabletop-load.js"></script>
-
-
-<script type="text/javascript">
+</script> 
+	<script src="datatable-tabletop-load.js"></script> 
+	<script type="text/javascript">
 
 Handlebars.registerHelper('cleanConcat', function() {
         var argument        = null;
@@ -335,10 +333,10 @@ Handlebars.registerHelper('wrapURL', function(str) {
 
 
 </script>
-<link href="js/manifestinteractive-jqvmap-45a3507/dist/jqvmap.min.css" rel="stylesheet">
-<script src="js/manifestinteractive-jqvmap-45a3507/dist/jquery.vmap.min.js"></script>
-<script src="js/manifestinteractive-jqvmap-45a3507/dist/maps/jquery.vmap.usa.js"></script>
-<script type="text/javascript">
+	<link href="js/manifestinteractive-jqvmap-45a3507/dist/jqvmap.min.css" rel="stylesheet">
+	<script src="js/manifestinteractive-jqvmap-45a3507/dist/jquery.vmap.min.js"></script> 
+	<script src="js/manifestinteractive-jqvmap-45a3507/dist/maps/jquery.vmap.usa.js"></script> 
+	<script type="text/javascript">
 $(window).bind("load", function() {
      $('.globalWrapper').on('click','.btn-vwqs',function() {
         $(this).toggleClass("active");
@@ -360,7 +358,7 @@ $(window).bind("load", function() {
 	jQuery('#vmap').vectorMap({
 		map: 'usa_en',
 		backgroundColor: null,
-		color: 'rgba(42,63,84,0.75)',
+		color: 'rgba(42,63,84,0.85)',
 		enableZoom: true,
 		showTooltip: true,
 		selectedColor: null,
@@ -378,12 +376,140 @@ $(window).bind("load", function() {
 
 
 </script>
-
-<div class="modal" id="glossary"><div class="modal-content"><div class="contentWrap"><a class="close" href="#">close</a><table cellspacing="0" cellpadding="5" border="0" width="100%"> <caption>Glossary</caption> <col width="20%"> <col width="80%"> <tr> <td width="20%">Technology-Based Effluent Limits (TBELs)</td><td width="80%">TBELs are developed based on available treatment technologies, and vary by source type (new vs. existing source and direct discharge vs. discharge to publicly owned treatment works) and pollutant type (toxic, conventional, and nonconventional). <br><br>TBELs for direct discharges from existing facilities fall under three categories: Best Practicable Control Technology Currently Available (BPT) (all pollutant types); Best Conventional Pollutant Control Technology (BCT) (conventional pollutants); Best Available Technology Economically Achievable (BAT) (toxic and non-conventional pollutants). BPT limitations are less stringent than BCT and BAT limitations, and must be met at an earlier deadline when TBELs are updated. <br><br>TBELs for direct discharges from new facilities are classified in New Source Performance Standards (NSPS). <br><br>TBELs for discharge from a source to publicly owned treatment works fall under two categories: existing sources must meet Pretreatment Standards for Existing Sources (PSES) and new sources must meet Pretreatment Standards for New Sources (PSNS).]</td></tr><tr> <td width="20%">Best Practicable Control Technology Currently Available (BPT) </td><td width="80%">&quot;BPT is the first level of technology-based effluent controls for direct dischargers and it applies to all types of pollutants (conventional, nonconventional, and toxic). The Federal Water Pollution Control Act (FWPCA) amendments of 1972 require that when EPA establishes BPT standards, it must consider the industry-wide cost of implementing the technology in relation to the pollutant-reduction benefits. EPA also must consider the age of the equipment and facilities, the processes employed, process changes, engineering aspects of the control technologies, non-water quality environmental impacts (including energy requirements), and such other factors as the EPA Administrator deems appropriate [CWA section 304(b)(1)(B)]. Traditionally, EPA establishes BPT effluent limitations on the basis of the average of the best performance of well-operated facilities in each industrial category or subcategory. Where existing performance is uniformly inadequate, BPT may reflect higher levels of control than currently in place in an industrial category if the Agency determines that the technology can be practically applied. See CWA sections 301(b)(1)(A) and 304(b)(1)(B).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td></tr><tr> <td width="20%">Best Conventional Pollutant Control Technology (BCT)</td><td width="80%">&quot;The 1977 CWA requires EPA to identify effluent reduction levels for conventional pollutants associated with BCT for direct discharges from existing industrial point sources. As with BPT, when establishing BCT the Agency considers the age of the equipment and facilities, the processes employed, process changes, engineering aspects of the control technologies, non-water quality environmental impacts (including energy requirements), and such other factors as the EPA Administrator deems appropriate [CWA section 304(b)(4)(B)]. In addition, EPA also considers a two-part cost reasonableness test, as required by CWA section 304(b)(4)(B), which includes (1) consideration of the reasonableness of the relationship between the costs of attaining a reduction in effluent and the effluent reduction benefits derived and (2) a comparison of the cost and level of reduction of such pollutants from the discharge from POTWs to the cost and level of reduction of such pollutants from a class or category of industrial sources. EPA explained its methodology for developing BCT limitations in detail in 51 FR 24974, July 9, 1986. See CWA sections 301(b)(2)(E) and 304(b)(4).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td></tr><tr> <td width="20%">Best Available Technology Economically Achievable (BAT)</td><td width="80%">&quot;For the direct discharge of toxic and non-conventional pollutants, EPA promulgates effluent guidelines based on BAT. The FWPCA amendments of 1972 require EPA to consider the cost of achieving effluent reductions when defining BAT; however, they do not specifically require EPA to balance the cost of implementation against the pollution reduction benefit. The technology selected for BAT must be economically achievable [CWA section 301(b)(2)(A)]. EPA generally defines BAT on the basis of the performance associated with the best control and treatment measures that facilities in an industrial category are capable of achieving. Like BPT and BCT, other factors EPA must consider in assessing BAT include the age of equipment and facilities involved, the process employed, process changes, non-water quality environmental impacts, including energy requirements, and other such factors as the EPA Administrator deems appropriate [CWA section 304(b)(2)(B)]. The Agency retains considerable discretion in assigning the weight accorded to these factors. BAT limitations may be based on effluent reductions attainable through changes in a facility&rsquo;s processes and operations. Where existing performance is uniformly inadequate, BAT may reflect a higher level of performance than is currently being achieved within a subcategory on the basis of technology transferred from a different subcategory or category. BAT may be based on process changes or internal controls, even when those technologies are not common industry practice. See CWA sections 301(b)(2)(A), (C), (D) and (F) and 304(b)(2).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td></tr><tr> <td width="20%">New Source Performance Standards (NSPS)</td><td width="80%">&quot;NSPS reflect effluent reductions that are achievable by direct dischargers based on the best available demonstrated control technology. New sources have the opportunity to install the best and most efficient production processes and wastewater treatment technologies at the time of construction. As a result, NSPS should represent the most stringent controls attainable through the application of the best available demonstrated control technology for all pollutants (i.e., conventional, nonconventional, and toxic pollutants). In establishing NSPS, EPA is directed to take into consideration the cost of achieving the effluent reduction and any non-water quality environmental impacts and energy requirements. See CWA section 306.&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td></tr><tr> <td width="20%">Pretreatment Standards for Existing Sources (PSES)</td><td width="80%">&quot;PSES are designed to prevent the discharge of pollutants that pass through, interfere with, or are otherwise incompatible with the operation of POTWs, including incompatibility with the POTW&rsquo;s chosen biosolids (sewage sludge) disposal methods. The categorical pretreatment standards for existing indirect dischargers are technology-based and are analogous to BAT. The general pretreatment regulations, which set forth the framework for the implementation of national pretreatment standards, are at Part 403. See CWA section 307(b).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td></tr><tr> <td width="20%">Pretreatment Standards for New Sources (PSNS)</td><td width="80%">&quot;PSNS are designed to prevent the discharges of pollutants that pass through, interfere with, or are otherwise incompatible with the operation of POTWs. PSNS are to be issued at the same time as NSPS. New indirect dischargers have the opportunity to incorporate into their facilities the best available demonstrated technologies at the time of construction. The Agency considers the same factors in promulgating PSNS as it considers in promulgating NSPS. See CWA section 307(c).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td></tr><tr> <td width="20%">Toxic (priority) pollutants</td><td width="80%">Pollutants defined in CWA section 307(a)(1) (and listed in § 401.15 and Appendix A of Part 423) and include 126 metals and manmade organic compounds. For additional information on toxic (priority) pollutants, see http://www.epa.gov/eg/toxic-and-priority-pollutants-under-clean-water-act. The full list of priority pollutants is available at http://www.epa.gov/sites/production/files/2015-09/documents/priority-pollutant-list-epa.pdf.</td></tr><tr> <td width="20%">Conventional pollutants</td><td width="80%">Pollutants defined in CWA section 304(a)(4) and § 401.16 (BOD5, TSS, fecal coliform, pH, and oil and grease).</td></tr><tr> <td width="20%">Nonconventional pollutants</td><td width="80%">Pollutants that do not fall under either of the above categories (conventional or toxic pollutants) and include parameters such as heat, chlorine, ammonia, nitrogen, phosphorus, chemical oxygen demand (COD), and whole effluent toxicity (WET).</td></tr><tr> <td width="20%">Prior appropriation doctrine</td><td width="80%">The prior appropriation doctrine is also known as &quot;first in time, first in right&quot; and is typically found in western states. The first person to divert water for a beneficial use has a vested right to the water, and in times of drought, the senior water user has rights to all water. Water rights can be transferred without the transfer of physical property, and water rights are lost by non-use.</td></tr><tr> <td width="20%">(Modified/Regulated) riparian doctrine</td><td width="80%">The riparian rights doctrine is typically found in eastern states and limits water use to landowners with riparian land. The landowner can make reasonable use of the watercourse, and during drought, water users share the shortage. Water rights cannot be transferred without the transfer of physical property, and water rights are not lost by non-use. Most states now use a regulated riparian system, which uses a permit system to allocate water usage.</td></tr><tr> <td width="20%">Reasonable use doctrine</td><td width="80%">Also known as the American rule. Landowners are entitled to use the groundwater on their land for reasonable use; landowners must take neighboring water users into account and may not waste groundwater. If landowners exceed &quot;reasonable use,&quot; they are liable in damages.</td></tr><tr> <td width="20%">Absolute ownership doctrine</td><td width="80%">Also known as the English rule. By owning the land, landowners own the groundwater contained beneath their property. As a result, a landowner may use as much groundwater as possible without taking neighboring water users into account. However, waste, malicious intent, and negligence are prohibited.</td></tr><tr> <td width="20%">Correlative rights doctrine</td><td width="80%">Rights to groundwater are based on land ownership, but landowners overlying the same aquifer are limited to a &quot;reasonable&quot; share of total groundwater supply from that aquifer. This share is typically dependent on the amount of land owned.</td></tr><tr> <td width="20%">Prescriptive rights</td><td width="80%">A prescriptive right is acquired through adverse possession of someone else's water right, similar to a &quot;squatter's right.&quot; These rights can only be granted by a court. </td></tr><tr> <td width="20%">Beneficial purpose doctrine</td><td width="80%">Landowners may use underlying groundwater, but only if the withdrawal will not lower the water table, will not exceed the landowner's reasonable share of groundwater supply, and will not have a direct effect on surface water. </td></tr><tr> <td width="20%">Water Control Manuals</td><td width="80%">Water Control Manuals outline policies, data protocols, project regulation schedules, and specifications for storage and releases from each reservoir in a given system. Water Control Manuals provide managers with guidance regarding multiple factors that must be evaluated to determine appropriate water management. These factors include, but are not limited to, power contract commitments, hydrologic and climatologic factors, downstream lake and basin-wide conditions, potential threats of flood and drought, and lake levels. <br><br>The U.S. Army Corps of Engineers are responsible for preparing and updating Water Control Manuals. The Corps prescribes the policies and procedures to be followed in carrying out water management activities, including establishment and the  updating of water control plans for Corps and non-Corps projects, as required by Federal </td></tr><tr> <td width="20%">Grandfathered Right</td><td width="80%">A grandfathered right occurs when holders of a right prior to the enactment of the policy are exempted from the specified water rights policy.</td></tr><tr> <td width="20%">Water Markets</td><td width="80%">Water markets facilitate the transfer of water rights in situations or in basins in which new water rights are insufficient or unavailable. One function of a water market is to act as a water rights exchange, which lists information about water rights that are available for sale and faciliatates communication between parties. Another function is a water bank, which serves as a trust to hold existing but unneeded water rights and make them available for purchase by new users. In general, water markets serve only one water basin, since water rights are attached to physical quantities of water that cannot be transferred between locations.</td></tr></table> </div></div></div>
-
+	<div class="modal" id="glossary">
+		<div class="modal-content pageWrap">
+			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+				<table cellspacing="0" cellpadding="5" border="0" width="100%">
+					<caption>
+					Glossary
+					</caption>
+					<col width="20%">
+					<col width="80%">
+					<tr>
+						<td width="20%">Technology-Based Effluent Limits (TBELs)</td>
+						<td width="80%">TBELs are developed based on available treatment technologies, and vary by source type (new vs. existing source and direct discharge vs. discharge to publicly owned treatment works) and pollutant type (toxic, conventional, and nonconventional). <br>
+							<br>
+							TBELs for direct discharges from existing facilities fall under three categories: Best Practicable Control Technology Currently Available (BPT) (all pollutant types); Best Conventional Pollutant Control Technology (BCT) (conventional pollutants); Best Available Technology Economically Achievable (BAT) (toxic and non-conventional pollutants). BPT limitations are less stringent than BCT and BAT limitations, and must be met at an earlier deadline when TBELs are updated. <br>
+							<br>
+							TBELs for direct discharges from new facilities are classified in New Source Performance Standards (NSPS). <br>
+							<br>
+							TBELs for discharge from a source to publicly owned treatment works fall under two categories: existing sources must meet Pretreatment Standards for Existing Sources (PSES) and new sources must meet Pretreatment Standards for New Sources (PSNS).]</td>
+					</tr>
+					<tr>
+						<td width="20%">Best Practicable Control Technology Currently Available (BPT) </td>
+						<td width="80%">&quot;BPT is the first level of technology-based effluent controls for direct dischargers and it applies to all types of pollutants (conventional, nonconventional, and toxic). The Federal Water Pollution Control Act (FWPCA) amendments of 1972 require that when EPA establishes BPT standards, it must consider the industry-wide cost of implementing the technology in relation to the pollutant-reduction benefits. EPA also must consider the age of the equipment and facilities, the processes employed, process changes, engineering aspects of the control technologies, non-water quality environmental impacts (including energy requirements), and such other factors as the EPA Administrator deems appropriate [CWA section 304(b)(1)(B)]. Traditionally, EPA establishes BPT effluent limitations on the basis of the average of the best performance of well-operated facilities in each industrial category or subcategory. Where existing performance is uniformly inadequate, BPT may reflect higher levels of control than currently in place in an industrial category if the Agency determines that the technology can be practically applied. See CWA sections 301(b)(1)(A) and 304(b)(1)(B).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td>
+					</tr>
+					<tr>
+						<td width="20%">Best Conventional Pollutant Control Technology (BCT)</td>
+						<td width="80%">&quot;The 1977 CWA requires EPA to identify effluent reduction levels for conventional pollutants associated with BCT for direct discharges from existing industrial point sources. As with BPT, when establishing BCT the Agency considers the age of the equipment and facilities, the processes employed, process changes, engineering aspects of the control technologies, non-water quality environmental impacts (including energy requirements), and such other factors as the EPA Administrator deems appropriate [CWA section 304(b)(4)(B)]. In addition, EPA also considers a two-part cost reasonableness test, as required by CWA section 304(b)(4)(B), which includes (1) consideration of the reasonableness of the relationship between the costs of attaining a reduction in effluent and the effluent reduction benefits derived and (2) a comparison of the cost and level of reduction of such pollutants from the discharge from POTWs to the cost and level of reduction of such pollutants from a class or category of industrial sources. EPA explained its methodology for developing BCT limitations in detail in 51 FR 24974, July 9, 1986. See CWA sections 301(b)(2)(E) and 304(b)(4).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td>
+					</tr>
+					<tr>
+						<td width="20%">Best Available Technology Economically Achievable (BAT)</td>
+						<td width="80%">&quot;For the direct discharge of toxic and non-conventional pollutants, EPA promulgates effluent guidelines based on BAT. The FWPCA amendments of 1972 require EPA to consider the cost of achieving effluent reductions when defining BAT; however, they do not specifically require EPA to balance the cost of implementation against the pollution reduction benefit. The technology selected for BAT must be economically achievable [CWA section 301(b)(2)(A)]. EPA generally defines BAT on the basis of the performance associated with the best control and treatment measures that facilities in an industrial category are capable of achieving. Like BPT and BCT, other factors EPA must consider in assessing BAT include the age of equipment and facilities involved, the process employed, process changes, non-water quality environmental impacts, including energy requirements, and other such factors as the EPA Administrator deems appropriate [CWA section 304(b)(2)(B)]. The Agency retains considerable discretion in assigning the weight accorded to these factors. BAT limitations may be based on effluent reductions attainable through changes in a facility&rsquo;s processes and operations. Where existing performance is uniformly inadequate, BAT may reflect a higher level of performance than is currently being achieved within a subcategory on the basis of technology transferred from a different subcategory or category. BAT may be based on process changes or internal controls, even when those technologies are not common industry practice. See CWA sections 301(b)(2)(A), (C), (D) and (F) and 304(b)(2).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td>
+					</tr>
+					<tr>
+						<td width="20%">New Source Performance Standards (NSPS)</td>
+						<td width="80%">&quot;NSPS reflect effluent reductions that are achievable by direct dischargers based on the best available demonstrated control technology. New sources have the opportunity to install the best and most efficient production processes and wastewater treatment technologies at the time of construction. As a result, NSPS should represent the most stringent controls attainable through the application of the best available demonstrated control technology for all pollutants (i.e., conventional, nonconventional, and toxic pollutants). In establishing NSPS, EPA is directed to take into consideration the cost of achieving the effluent reduction and any non-water quality environmental impacts and energy requirements. See CWA section 306.&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td>
+					</tr>
+					<tr>
+						<td width="20%">Pretreatment Standards for Existing Sources (PSES)</td>
+						<td width="80%">&quot;PSES are designed to prevent the discharge of pollutants that pass through, interfere with, or are otherwise incompatible with the operation of POTWs, including incompatibility with the POTW&rsquo;s chosen biosolids (sewage sludge) disposal methods. The categorical pretreatment standards for existing indirect dischargers are technology-based and are analogous to BAT. The general pretreatment regulations, which set forth the framework for the implementation of national pretreatment standards, are at Part 403. See CWA section 307(b).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td>
+					</tr>
+					<tr>
+						<td width="20%">Pretreatment Standards for New Sources (PSNS)</td>
+						<td width="80%">&quot;PSNS are designed to prevent the discharges of pollutants that pass through, interfere with, or are otherwise incompatible with the operation of POTWs. PSNS are to be issued at the same time as NSPS. New indirect dischargers have the opportunity to incorporate into their facilities the best available demonstrated technologies at the time of construction. The Agency considers the same factors in promulgating PSNS as it considers in promulgating NSPS. See CWA section 307(c).&quot; (NPDES Permit Writers Manual, http://www.epa.gov/sites/production/files/2015-09/documents/pwm_chapt_05.pdf)</td>
+					</tr>
+					<tr>
+						<td width="20%">Toxic (priority) pollutants</td>
+						<td width="80%">Pollutants defined in CWA section 307(a)(1) (and listed in § 401.15 and Appendix A of Part 423) and include 126 metals and manmade organic compounds. For additional information on toxic (priority) pollutants, see http://www.epa.gov/eg/toxic-and-priority-pollutants-under-clean-water-act. The full list of priority pollutants is available at http://www.epa.gov/sites/production/files/2015-09/documents/priority-pollutant-list-epa.pdf.</td>
+					</tr>
+					<tr>
+						<td width="20%">Conventional pollutants</td>
+						<td width="80%">Pollutants defined in CWA section 304(a)(4) and § 401.16 (BOD5, TSS, fecal coliform, pH, and oil and grease).</td>
+					</tr>
+					<tr>
+						<td width="20%">Nonconventional pollutants</td>
+						<td width="80%">Pollutants that do not fall under either of the above categories (conventional or toxic pollutants) and include parameters such as heat, chlorine, ammonia, nitrogen, phosphorus, chemical oxygen demand (COD), and whole effluent toxicity (WET).</td>
+					</tr>
+					<tr>
+						<td width="20%">Prior appropriation doctrine</td>
+						<td width="80%">The prior appropriation doctrine is also known as &quot;first in time, first in right&quot; and is typically found in western states. The first person to divert water for a beneficial use has a vested right to the water, and in times of drought, the senior water user has rights to all water. Water rights can be transferred without the transfer of physical property, and water rights are lost by non-use.</td>
+					</tr>
+					<tr>
+						<td width="20%">(Modified/Regulated) riparian doctrine</td>
+						<td width="80%">The riparian rights doctrine is typically found in eastern states and limits water use to landowners with riparian land. The landowner can make reasonable use of the watercourse, and during drought, water users share the shortage. Water rights cannot be transferred without the transfer of physical property, and water rights are not lost by non-use. Most states now use a regulated riparian system, which uses a permit system to allocate water usage.</td>
+					</tr>
+					<tr>
+						<td width="20%">Reasonable use doctrine</td>
+						<td width="80%">Also known as the American rule. Landowners are entitled to use the groundwater on their land for reasonable use; landowners must take neighboring water users into account and may not waste groundwater. If landowners exceed &quot;reasonable use,&quot; they are liable in damages.</td>
+					</tr>
+					<tr>
+						<td width="20%">Absolute ownership doctrine</td>
+						<td width="80%">Also known as the English rule. By owning the land, landowners own the groundwater contained beneath their property. As a result, a landowner may use as much groundwater as possible without taking neighboring water users into account. However, waste, malicious intent, and negligence are prohibited.</td>
+					</tr>
+					<tr>
+						<td width="20%">Correlative rights doctrine</td>
+						<td width="80%">Rights to groundwater are based on land ownership, but landowners overlying the same aquifer are limited to a &quot;reasonable&quot; share of total groundwater supply from that aquifer. This share is typically dependent on the amount of land owned.</td>
+					</tr>
+					<tr>
+						<td width="20%">Prescriptive rights</td>
+						<td width="80%">A prescriptive right is acquired through adverse possession of someone else's water right, similar to a &quot;squatter's right.&quot; These rights can only be granted by a court. </td>
+					</tr>
+					<tr>
+						<td width="20%">Beneficial purpose doctrine</td>
+						<td width="80%">Landowners may use underlying groundwater, but only if the withdrawal will not lower the water table, will not exceed the landowner's reasonable share of groundwater supply, and will not have a direct effect on surface water. </td>
+					</tr>
+					<tr>
+						<td width="20%">Water Control Manuals</td>
+						<td width="80%">Water Control Manuals outline policies, data protocols, project regulation schedules, and specifications for storage and releases from each reservoir in a given system. Water Control Manuals provide managers with guidance regarding multiple factors that must be evaluated to determine appropriate water management. These factors include, but are not limited to, power contract commitments, hydrologic and climatologic factors, downstream lake and basin-wide conditions, potential threats of flood and drought, and lake levels. <br>
+							<br>
+							The U.S. Army Corps of Engineers are responsible for preparing and updating Water Control Manuals. The Corps prescribes the policies and procedures to be followed in carrying out water management activities, including establishment and the  updating of water control plans for Corps and non-Corps projects, as required by Federal </td>
+					</tr>
+					<tr>
+						<td width="20%">Grandfathered Right</td>
+						<td width="80%">A grandfathered right occurs when holders of a right prior to the enactment of the policy are exempted from the specified water rights policy.</td>
+					</tr>
+					<tr>
+						<td width="20%">Water Markets</td>
+						<td width="80%">Water markets facilitate the transfer of water rights in situations or in basins in which new water rights are insufficient or unavailable. One function of a water market is to act as a water rights exchange, which lists information about water rights that are available for sale and faciliatates communication between parties. Another function is a water bank, which serves as a trust to hold existing but unneeded water rights and make them available for purchase by new users. In general, water markets serve only one water basin, since water rights are attached to physical quantities of water that cannot be transferred between locations.</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="About">
+		<div class="modal-content pageWrap">
+			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+				<h2>About</h2>
+				<p>The database provides key information about state and federal water policies and programs with relevance to the U.S. energy sector. All data were gathered from public sources with links and contact information provided for users requiring further information.  Users are encouraged to refer to these links for original source materials with additional details and, if necessary, to verify that a specific policy or program applies to your project.</p>
+				<p>The database was commissioned by the U.S. Department of Energy (DOE) Office of Energy Policy and Systems Analysis under the direction of Dr. Diana Bauer, Director of Energy Systems Analysis and Integration, and by Dr. Samuel Bockenhauer, Physical Scientist. Under contract to DOE, Energetics Incorporated researched and gathered the information for the database and developed the web-based tool.</p>
+				<p>While all efforts are made to provide the best information possible, DOE does not assume responsibility for the accuracy, completeness, or reliability of the data. DOE and Energetics Incorporated disclaim all liability that may arise out of use or misuse of the database.</p>
+				<p>To download the complete database in spreadsheet format click here.</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="Contact">
+		<div class="modal-content pageWrap">
+			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+				<h2>Contact</h2>
+				<p>For questions or comments about this database or web-based tool please contact:</p>
+				<p> <a href="http://www.google.com/recaptcha/mailhide/d?k=01TlrepEIIWkfw1U53H46o8Q==&amp;c=80w33-FtIP6_THWOvgIdxayQu3KjpRq-o9BmiQC-PcE=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\x3d01TlrepEIIWkfw1U53H46o8Q\x3d\x3d\x26c\x3d80w33-FtIP6_THWOvgIdxayQu3KjpRq-o9BmiQC-PcE\x3d', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">Dr. Samuel Bockenhauer</a> <br>
+					Physical Scientist<br>
+					U.S. Department of Energy</p>
+			</div>
+		</div>
+	</div>
 </div>
+<!-- /.globalWrapper -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-98272787-1', 'auto');
+  ga('send', 'pageview');
 
-
+</script>
 </body>
 </html>

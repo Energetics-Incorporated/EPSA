@@ -11,9 +11,12 @@ a{text-decoration:none;color:#0AA3CF;}
 #masthead {/*box-shadow:0 0 15px 2px #000;background-color:#42CEF6;border-bottom:10px solid #2A3F54;*/width:100%;height:120px;color:#fff;position:fixed;top:0;left:0;z-index:999;
 background: #ebebeb url(../images/masthead2.jpg) no-repeat fixed 0px 0px / cover ;}
 #masthead h1 {font-weight:400;font-size:30px;line-height:1.1;margin:10px 0;padding:0;}
-#masthead h2 {font-weight:400;font-size:14px;line-height:1.1;margin:8px 0;padding:0;}
-#masthead header {display:inline-block;padding-left:103px;width:47%;background: url(../images/DOE_Seal_Color.png) no-repeat 2px 10px;background-size: 92px auto;}
-#masthead p {font-size:9px;}
+#masthead h2 {font-weight:400;font-size:14px;line-height:1.1;margin:8px 0 0 0;padding:0;}
+#masthead header {display:inline-block;padding-left:10px;width:47%;}
+#masthead header strong, #masthead header p, #masthead header p a {color:#e46666;}
+#masthead header h1 strong {font-size:20px;}
+#masthead p {font-size:12px;margin-top: 3px;}
+#masthead header p a {text-decoration: underline;}
 #masthead nav {float:right;}
 #masthead nav ul {display:inline-block;padding:0;margin:0;}
 #masthead nav ul li {list-style:none;padding:0;margin:0;}
@@ -78,7 +81,15 @@ background: #ebebeb url(../images/masthead2.jpg) no-repeat fixed 0px 0px / cover
 }
 
 .contentWrap {position:absolute;top:0;right:0;bottom:0;left:0;margin:auto;width:96%;padding:0 30px;height:100%;white-space:pre-line;overflow:auto;}
-.contentWrap p{}
+
+.modal div.modal-content.pageWrap {width:80%;}
+.pageContent {
+    padding-top: 30px;
+    height: 95%;
+}
+.contentWrap.pageContent {white-space: normal;width:95%;}
+.contentWrap.pageContent p {margin:15px 0;}
+
 
 option {max-width:100px;}
 .yadcf-filter-wrapper {
@@ -122,24 +133,24 @@ footer small {font-size:10px;margin:0;}
 
 .custom-tooltip-styling {z-index:9999;}
 
-#overviewWrap {position:relative;}
+#overviewWrap {position:relative;display: table;}
 
 #overviewLeft {
-     background: rgba(0, 0, 0, 0.65) none repeat scroll 0px 0px;
-     display: inline-block;
-     padding:0;
-     width:50%;
-  height:632px;
-  position:relative;
-  color:#fff;
+	 background: rgba(0, 0, 0, 0.65) none repeat scroll 0px 0px;
+	 display: table-cell;
+	 padding:0;
+	 width:50%;
+	position:relative;
+	color:#fff;
  }
 
 #overviewLeft .inner {padding:10px 30px;}
 
 #overviewRight {
-     display: inline-block;
+     display: table-cell;
      vertical-align: top;
-     width: 48%;
+     width: 50%;
+	background: rgba(255,255,255,0.5);
 }
 
 #vmap {width:100%;height:500px;}
@@ -152,10 +163,6 @@ footer small {font-size:10px;margin:0;}
 
 button.dt-button, div.dt-button, a.dt-button { color: #0AA3CF;}
 
-div#glossary .contentWrap {
-    padding-top: 30px;
-    height: 95%;
-}
 #glossary table {margin-top:30px;border-collapse: collapse;}
 #glossary tr {vertical-align:top;}
 #glossary tr:nth-child(odd){ background-color: #f9f9f9;}

@@ -80,13 +80,12 @@ function myPillFilter(data) {
 function loadDataTable() {	
 	
     // Load Datatables after Tabletop is loaded
-    oTable = $('#searchable-table').DataTable({
-        
-		"autoWidth": false,
-		lengthMenu: [ 10, 25, 50, 75, 100 ],
-		"columnDefs": [
+    oTable = $('#searchable-table').DataTable({        
+		
+		dom: "Bf<'paginationWrap'irlp>",
+		columnDefs: [
 			{
-				"targets": [ 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 ],
+				"targets": [ 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 ],
 				"visible": false
 			},			
 			{
@@ -103,66 +102,42 @@ function loadDataTable() {
 			}
 			
 		],
-        "oLanguage": {
+		oLanguage: {
             "sLengthMenu": "_MENU_ records per page"
         },
-        "iDisplayLength": 25,
-        "aaSorting": [[ 0, "asc" ]],
-        /*"aoColumns": [
-           {
-                "sWidth": "26%"
-                // "sType": "formatted-num" 
-            },
-		   {
-                "sWidth": "6%"
-                // "sType": "formatted-num" 
-            },
-		   {
-                "sWidth": "6%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "26%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "16%"
-                // "sType": "formatted-num" 
-            },{
-                "sWidth": "16%"
-                // "sType": "formatted-num" 
-            }
-        ],*/
-		//dom: "Bfrilp",
-		dom: "Bf<'paginationWrap'irlp>",
-		fixedHeader: true,
-		buttons:[
+        iDisplayLength: 25,
+		fixedHeader: true,		
+		buttons: [
 			
 			{
+				text: 'custom name',
 				extend: "columnsToggle",
 				columns: "0"
 			},
 			{
 				extend: "columnsToggle",
-				columns: "1"
+				columns: "1",
+				text: 'button 1'
 			},
 			{
 				extend: "columnsToggle",
-				columns: "2"
+				columns: "2",
+				text: 'button 2'
 			},
 			{
 				extend: "columnsToggle",
-				columns: "3"
+				columns: "3",
+				text: 'button 3'
 			},
 			{
 				extend: "columnsToggle",
-				columns: "4"
+				columns: "4",
+				text: 'button 4'
 			},
 			{
 				extend: "columnsToggle",
-				columns: "5"
-			},
-			{
-				extend: "columnsToggle",
-				columns: "6"
+				columns: "5",
+				text: 'button 5'
 			},
 			{
 				 extend: "columnToggle",
@@ -171,12 +146,7 @@ function loadDataTable() {
 				 className: "btn-vwqs"				 
 			}
 			
-		],
-
-        // Fix thead to top of page when scrolling past it
-        "initComplete": function(settings, json) {
-            $('#searchable-table').show();
-        }
+		]
 		
     });
 	
@@ -187,7 +157,7 @@ yadcf.init(oTable,
 			column_number: 0,
 			filter_type: "text",
 	        text_data_delimiter: ",",
-			filter_default_label: "Name sss"
+			filter_default_label: "Name"
 		}, 
 		{
 			column_number: 1, 
@@ -214,7 +184,9 @@ yadcf.init(oTable,
 		},
 		{
 			column_number: 5,
-			width:"50px"
+			width:"50px",
+			filter_type: "multi_select",
+			select_type: "select2"
 		}		
 			
 		
