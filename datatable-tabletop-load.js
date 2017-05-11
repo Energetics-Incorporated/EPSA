@@ -71,11 +71,10 @@ jQuery.extend( jQuery.fn.dataTableExt.oSort, {
 // Load up the DataTable
 
 var oTable;
-/*
+
 function myPillFilter(data) {
 	 yadcf.exFilterColumn(oTable, [[1, data]]);
 	}
-*/	
 	
 function loadDataTable() {	
 	
@@ -102,6 +101,7 @@ function loadDataTable() {
 			}
 			
 		],
+		order:[[1, "desc"]],
 		oLanguage: {
             "sLengthMenu": "_MENU_ records per page"
         },
@@ -110,40 +110,47 @@ function loadDataTable() {
 		buttons: [
 			
 			{
-				text: 'custom name',
-				extend: "columnsToggle",
-				columns: "0"
+				extend: 'columnToggle',
+				columns: '.colName',
+				className: 'btn-name',
+				titleAttr: 'Name'
 			},
 			{
-				extend: "columnsToggle",
-				columns: "1",
-				text: 'button 1'
+				extend: 'columnToggle',
+				columns: '.colState',
+				className: 'btn-state',
+				titleAttr: 'State'
 			},
 			{
-				extend: "columnsToggle",
-				columns: "2",
-				text: 'button 2'
+				extend: 'columnToggle',
+				columns: '.colJurisdiction',
+				className: 'btn-juris',
+				titleAttr: 'Jurisdiction: Geographic coverage of policy or program'
 			},
 			{
-				extend: "columnsToggle",
-				columns: "3",
-				text: 'button 3'
+				extend: 'columnToggle',
+				columns: '.colPolicy',
+				className: 'btn-policy',
+				titleAttr: 'Type of Policy or Program'
 			},
 			{
-				extend: "columnsToggle",
-				columns: "4",
-				text: 'button 4'
+				extend: 'columnToggle',
+				columns: '.colRights',
+				className: 'btn-wrd',
+				titleAttr: 'Water Rights Doctrine: Specifies the type of water rights doctrine (see glossary) relevant to the policy.'
 			},
 			{
-				extend: "columnsToggle",
-				columns: "5",
-				text: 'button 5'
+				extend: 'columnToggle',
+				columns: '.colWaterbody',
+				className: 'btn-waterbody',
+				titleAttr: 'Applicable Waterbody Types'
 			},
 			{
-				 extend: "columnToggle",
-				 columns: ".secondary",
-				 text:"Water Quality Standards",
-				 className: "btn-vwqs"				 
+				 extend: 'columnToggle',
+				 columns: '.secondary',
+				 text: 'Water Quality Standards',
+				 className: 'btn-vwqs',
+				 titleAttr: 'Water Quality Standards: Water quality standards are applicable for "water discharge regulation: water quality standards" entries only, which can be filtered under "Type of Policy or Program" field.'
 			}
 			
 		]
@@ -160,11 +167,10 @@ yadcf.init(oTable,
 			filter_default_label: "Name"
 		}, 
 		{
-			column_number: 1, 
-			filter_type: "multi_select",
-			select_type: "select2",
-			width:"80px"
-			// filter_container_id: "some_data"
+			column_number: 1
+			//filter_type: "multi_select",
+			//select_type: "select2",
+			//width:"80px"
 		}, 
 		{
 			column_number: 2,
@@ -187,13 +193,18 @@ yadcf.init(oTable,
 			width:"50px",
 			filter_type: "multi_select",
 			select_type: "select2"
-		}		
+		}/*,
+		{
+			column_number: 21, 			
+			//filter_container_id: "some_data"
+			
+		}*/		
 			
 		
 	]
-);
-
-
+);	
+	
+	
 	
 	
 // Close loadDataTable
