@@ -106,7 +106,7 @@ option {max-width:100px;}
 }
 
 .dt-button.buttons-columnVisibility {padding:10px;}
-.dt-button.buttons-columnVisibility.active {background-color:#fff;border:1px solid #fff;box-shadow:inset 0px 1px 2px #999;padding:10px;color:#999;background-image:none;}
+.dt-button.buttons-columnVisibility.active {background-color:#fff;border:1px solid #fff;box-shadow:inset 0px 1px 2px #999;padding:10px;background-image:none;color:#000;}
 button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled) {border-color:#fff;}
 
 #loading {position: absolute; width: 100%; height: 100%; background:url(../images/balls.gif) no-repeat center center #fff;left:0;right:0;top:0;bottom:0; margin:auto;z-index:999;}
@@ -228,6 +228,28 @@ a.dt-button.active:not(.disabled):hover:not(.disabled)
 	text-decoration:underline;
 	box-shadow:none;
 }
+
+
+
+div.dt-button-collection button.dt-button:active:not(.disabled), 
+div.dt-button-collection button.dt-button.active:not(.disabled), 
+div.dt-button-collection div.dt-button:active:not(.disabled), 
+div.dt-button-collection div.dt-button.active:not(.disabled), 
+div.dt-button-collection a.dt-button:active:not(.disabled), 
+div.dt-button-collection a.dt-button.active:not(.disabled){
+	padding-left:24px;
+	background:url(../images/checkbox.png) no-repeat 0 -32px;
+	border:0;
+	box-shadow:none;
+}
+.dt-button.buttons-collection.buttons-colvis.btn-vwqs {
+	background: url(../images/filter.png) no-repeat left center;
+	padding: 10px 0;
+	margin-left: 20px;
+}
+a.dt-button.buttons-collection.buttons-colvis.btn-vwqs:hover,
+a.dt-button.buttons-collection.buttons-colvis.btn-vwqs:active {background: url(../images/filter.png) no-repeat left center;}
+
 .ui-widget-shadow {    
     opacity: .90;
     filter: Alpha(Opacity=90);
@@ -293,6 +315,66 @@ body .jqvmap-label {z-index: 99999;padding:0 10px 10px 10px;}
       }
 	  
 */
+
+      #jqvmap1_dc_pin, #jqvmap2_dc_pin, #jqvmap3_dc_pin, #jqvmap4_dc_pin, #jqvmap5_dc_pin {
+        display: none;
+      }
+	  /* Reposition Labels that are not quite right ( labels are centered in shape, and sometimes need tweaking ) */
+      #jqvmap1_ak_pin {
+        margin-top: -2%;
+      }
+      #jqvmap1_ca_pin {
+        margin-left: -2%;
+      }
+      #jqvmap1_ct_pin {
+        margin-top: -0.25%;
+        margin-left: -0.25%;
+      }
+      #jqvmap1_fl_pin {
+        margin-left: 4%;
+      }
+      #jqvmap1_id_pin {
+        margin-top: 3%;
+        margin-left: -1%;
+      }
+      #jqvmap1_ky_pin {
+        margin-left: 2%;
+      }
+      #jqvmap1_la_pin {
+        margin-left: -2%;
+      }
+      #jqvmap1_mi_pin {
+        margin-top: 3%;
+        margin-left: 3%;
+      }
+      #jqvmap1_ma_pin {
+        margin-top: -0.25%;
+      }
+      #jqvmap1_mn_pin {
+        margin-top: 0%;
+        margin-left: -2%;
+      }
+      #jqvmap1_nh_pin {
+        margin-top: 1%;
+        margin-left: -0.25%;
+      }
+      #jqvmap1_nj_pin {
+        margin-top: 0%;
+      }
+      #jqvmap1_ok_pin {
+        margin-left: 2%;
+      }
+      #jqvmap1_va_pin {
+        margin-left: 2%;
+      }
+      #jqvmap1_wv_pin {
+        margin-left: -1%;
+        margin-top: 1%;
+      }
+	  #jqvmap1_md_pin {        
+        margin-top: 0%;
+      }
+	  
 #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
     border-bottom: 1px solid #CCC;
     padding: 20px 0;

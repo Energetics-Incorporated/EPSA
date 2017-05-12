@@ -145,12 +145,23 @@ function loadDataTable() {
 				className: 'btn-waterbody',
 				titleAttr: 'Applicable Waterbody Types'
 			},
-			{
+			/*{
 				 extend: 'columnToggle',
 				 columns: '.secondary',
 				 text: 'Water Quality Standards',
 				 className: 'btn-vwqs',
 				 titleAttr: 'Water Quality Standards: Water quality standards are applicable for "water discharge regulation: water quality standards" entries only, which can be filtered under "Type of Policy or Program" field.'
+			}*/
+			{
+				extend: 'colvis',
+				columns: '.secondary',
+				text: 'Water Quality Standards',
+				className: 'btn-vwqs',
+				titleAttr: 'Water Quality Standards: Water quality standards are applicable for "water discharge regulation: water quality standards" entries only, which can be filtered under "Type of Policy or Program" field.',
+				prefixButtons: [{extend:'columnToggle',
+                          text:'Toggle All',
+                          columns:'.secondary'
+                         }]
 			}
 			
 		]
