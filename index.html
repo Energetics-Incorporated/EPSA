@@ -361,6 +361,18 @@ $(window).bind("load", function() {
 		});
 	});
 	*/
+	/*
+	function sizeMap() {
+    var containerWidth = $('#overviewRight').width(),
+        containerHeight = (containerWidth / 1.4);
+	
+    $('#vmap').css({
+        'width': containerWidth,
+        'height': containerHeight
+    });
+		
+	}
+	*/
 	
 	jQuery('#vmap').vectorMap({
 		map: 'usa_en',
@@ -427,6 +439,10 @@ $(window).bind("load", function() {
 			}
 		}
 	});
+	/*
+	sizeMap();
+	$(window).on("resize", sizeMap);
+	*/
 });
 
 
@@ -618,301 +634,301 @@ $(window).bind("load", function() {
 							</tfoot>
 							<tbody>
 							<tr>
-								<td><a href="#modal-19">Surface Water Rights (Alabama)</a></td>
+								<td><a href="#modal-19" onclick="myPillFilter('Alabama')">Surface Water Rights (Alabama)</a></td>
 								<td>Alabama</td>
 								<td>Riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-38">Surface Water Rights (Alaska)</a></td>
+								<td><a href="#modal-38" onclick="myPillFilter('Alaska')">Surface Water Rights (Alaska)</a></td>
 								<td>Alaska</td>
 								<td>Prior appropriation</td>
 								<td>500</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-64">Surface Water Rights (Arizona)</a></td>
+								<td><a href="#modal-64" onclick="myPillFilter('Arizona')">Surface Water Rights (Arizona)</a></td>
 								<td>Arizona</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-81">Surface Water Rights (Arkansas)</a></td>
+								<td><a href="#modal-81" onclick="myPillFilter('Arkansas')">Surface Water Rights (Arkansas)</a></td>
 								<td>Arkansas</td>
 								<td>Regulated riparian</td>
 								<td>893</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-114">Surface Water Rights (California)</a></td>
+								<td><a href="#modal-114" onclick="myPillFilter('California')">Surface Water Rights (California)</a></td>
 								<td>California</td>
 								<td>Multiple</td>
 								<td>8930</td>
 							</tr>
 							<tr>
-								<td> <a href="#modal-151">Surface Water Rights (Colorado)</a></td>
+								<td> <a href="#modal-151" onclick="myPillFilter('Colorado')">Surface Water Rights (Colorado)</a></td>
 								<td>Colorado</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-181">Surface Water Rights (Connecticut)</a></td>
+								<td><a href="#modal-181" onclick="myPillFilter('Connecticut')">Surface Water Rights (Connecticut)</a></td>
 								<td>Connecticut</td>
 								<td>Regulated riparian</td>
 								<td>50,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-197">Surface Water Rights (Delaware)</a></td>
+								<td><a href="#modal-197" onclick="myPillFilter('Delaware')">Surface Water Rights (Delaware)</a></td>
 								<td>Delaware</td>
 								<td>Regulated riparian</td>
 								<td>50,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-219">Surface Water Rights (Florida)</a></td>
+								<td><a href="#modal-219" onclick="myPillFilter('Florida')">Surface Water Rights (Florida)</a></td>
 								<td>Florida</td>
 								<td>Regulated riparian</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-237">Surface Water Rights (Georgia)</a></td>
+								<td><a href="#modal-237" onclick="myPillFilter('Georgia')">Surface Water Rights (Georgia)</a></td>
 								<td>Georgia</td>
 								<td>Regulated riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-253">Surface Water Rights (Hawaii)</a></td>
+								<td><a href="#modal-253" onclick="myPillFilter('Hawaii')">Surface Water Rights (Hawaii)</a></td>
 								<td>Hawaii</td>
 								<td>Riparian</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-269">Surface Water Rights (Idaho)</a></td>
+								<td><a href="#modal-269" onclick="myPillFilter('Idaho')">Surface Water Rights (Idaho)</a></td>
 								<td>Idaho</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-297">Surface Water Rights (Illinois)</a></td>
+								<td><a href="#modal-297" onclick="myPillFilter('Illinois')">Surface Water Rights (Illinois)</a></td>
 								<td>Illinois</td>
 								<td>Regulated riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-324">Surface Water Rights (Indiana)</a></td>
+								<td><a href="#modal-324" onclick="myPillFilter('Indiana')">Surface Water Rights (Indiana)</a></td>
 								<td>Indiana</td>
 								<td>Riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-349">Surface Water Rights (Iowa)</a></td>
+								<td><a href="#modal-349" onclick="myPillFilter('Iowa')">Surface Water Rights (Iowa)</a></td>
 								<td>Iowa</td>
 								<td>Modified riparian</td>
 								<td>25,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-369">Surface Water Rights (Kansas)</a></td>
+								<td><a href="#modal-369" onclick="myPillFilter('Kansas')">Surface Water Rights (Kansas)</a></td>
 								<td>Kansas</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-385">Surface Water Rights (Kentucky)</a></td>
+								<td><a href="#modal-385" onclick="myPillFilter('Kentucky')">Surface Water Rights (Kentucky)</a></td>
 								<td>Kentucky</td>
 								<td>Riparian</td>
 								<td>10,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-399">Surface Water Rights (Louisiana)</a></td>
+								<td><a href="#modal-399" onclick="myPillFilter('Louisiana')">Surface Water Rights (Louisiana)</a></td>
 								<td>Louisiana</td>
 								<td>Riparian</td>
 								<td>no limit</td>
 							</tr>
 							<tr>
-								<td> <a href="#modal-417">Surface Water Rights (Maine)</a></td>
+								<td> <a href="#modal-417" onclick="myPillFilter('Maine')">Surface Water Rights (Maine)</a></td>
 								<td>Maine</td>
 								<td>Riparian</td>
 								<td>20,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-433">Surface Water Rights (Maryland)</a></td>
+								<td><a href="#modal-433" onclick="myPillFilter('Maryland')">Surface Water Rights (Maryland)</a></td>
 								<td>Maryland</td>
 								<td>Riparian</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-451">Surface Water Rights (Massachusetts)</a></td>
+								<td><a href="#modal-451" onclick="myPillFilter('Massachusetts')">Surface Water Rights (Massachusetts)</a></td>
 								<td>Massachusetts</td>
 								<td>Regulated riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-480">Surface Water Rights (Michigan)</a></td>
+								<td><a href="#modal-480" onclick="myPillFilter('Michigan')">Surface Water Rights (Michigan)</a></td>
 								<td>Michigan</td>
 								<td>Regulated riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-515">Surface Water Rights (Minnesota)</a></td>
+								<td><a href="#modal-515" onclick="myPillFilter('Minnesota')">Surface Water Rights (Minnesota)</a></td>
 								<td>Minnesota</td>
 								<td>Riparian</td>
 								<td>10,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-535">Surface Water Rights (Mississippi)</a></td>
+								<td><a href="#modal-535" onclick="myPillFilter('Mississippi')">Surface Water Rights (Mississippi)</a></td>
 								<td>Mississippi</td>
 								<td>Regulated riparian</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-553">Surface Water Rights (Missouri)</a></td>
+								<td><a href="#modal-553" onclick="myPillFilter('Missouri')">Surface Water Rights (Missouri)</a></td>
 								<td>Missouri</td>
 								<td>Riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-582">Surface Water Rights (Montana)</a></td>
+								<td><a href="#modal-582" onclick="myPillFilter('Montana')">Surface Water Rights (Montana)</a></td>
 								<td>Montana</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-640">Surface Water Rights (Nebraska)</a></td>
+								<td><a href="#modal-640" onclick="myPillFilter('Nebraska')">Surface Water Rights (Nebraska)</a></td>
 								<td>Nebraska</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-661">Surface Water Rights (Nevada)</a></td>
+								<td><a href="#modal-661" onclick="myPillFilter('Nevada')">Surface Water Rights (Nevada)</a></td>
 								<td>Nevada</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1140">Surface Water Rights (New Hampshire)</a></td>
+								<td><a href="#modal-1140" onclick="myPillFilter('New Hampshire')">Surface Water Rights (New Hampshire)</a></td>
 								<td>New Hampshire</td>
 								<td>Riparian</td>
 								<td>20,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1152">Surface Water Rights (New Jersey)</a></td>
+								<td><a href="#modal-1152" onclick="myPillFilter('New Jersey')">Surface Water Rights (New Jersey)</a></td>
 								<td>New Jersey</td>
 								<td>Riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1175">Surface Water Rights (New Mexico)</a></td>
+								<td><a href="#modal-1175" onclick="myPillFilter('New Mexico')">Surface Water Rights (New Mexico)</a></td>
 								<td>New Mexico</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1246">Surface Water Rights (New York)</a></td>
+								<td><a href="#modal-1246" onclick="myPillFilter('New York')">Surface Water Rights (New York)</a></td>
 								<td>New York</td>
 								<td>Riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1278">Surface Water Rights (North Carolina)</a></td>
+								<td><a href="#modal-1278" onclick="myPillFilter('North Carolina')">Surface Water Rights (North Carolina)</a></td>
 								<td>North Carolina</td>
 								<td>Riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1298">Surface Water Rights (North Dakota)</a></td>
+								<td><a href="#modal-1298" onclick="myPillFilter('North Dakota')">Surface Water Rights (North Dakota)</a></td>
 								<td>North Dakota</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1312">Surface Water Rights (Ohio)</a></td>
+								<td><a href="#modal-1312" onclick="myPillFilter('Ohio')">Surface Water Rights (Ohio)</a></td>
 								<td>Ohio</td>
 								<td>Riparian</td>
 								<td>2,000,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1351">Surface Water Rights (Oklahoma)</a></td>
+								<td><a href="#modal-1351" onclick="myPillFilter('Oklahoma')">Surface Water Rights (Oklahoma)</a></td>
 								<td>Oklahoma</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1369">Surface Water Rights (Oregon)</a></td>
+								<td><a href="#modal-1369" onclick="myPillFilter('Oregon')">Surface Water Rights (Oregon)</a></td>
 								<td>Oregon</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1402">Surface Water Rights (Pennsylvania)</a></td>
+								<td><a href="#modal-1402" onclick="myPillFilter('Pennsylvania')">Surface Water Rights (Pennsylvania)</a></td>
 								<td>Pennsylvania</td>
 								<td>Riparian</td>
 								<td>no limit</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1421">Surface Water Rights (Rhode Island)</a></td>
+								<td><a href="#modal-1421" onclick="myPillFilter('Rhode Island')">Surface Water Rights (Rhode Island)</a></td>
 								<td>Rhode Island</td>
 								<td>Riparian</td>
 								<td>no limit</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1437">Surface Water Rights (South Carolina)</a></td>
+								<td><a href="#modal-1437" onclick="myPillFilter('South Carolina')">Surface Water Rights (South Carolina)</a></td>
 								<td>South Carolina</td>
 								<td>Regulated riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1469">Surface Water Rights (South Dakota)</a></td>
+								<td><a href="#modal-1469" onclick="myPillFilter('South Dakota')">Surface Water Rights (South Dakota)</a></td>
 								<td>South Dakota </td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1482">Surface Water Rights (Tennessee)</a></td>
+								<td><a href="#modal-1482" onclick="myPillFilter('Tennessee')">Surface Water Rights (Tennessee)</a></td>
 								<td>Tennessee</td>
 								<td>Riparian</td>
 								<td>10,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1505">Surface Water Rights (Texas)</a></td>
+								<td><a href="#modal-1505" onclick="myPillFilter('Texas')">Surface Water Rights (Texas)</a></td>
 								<td>Texas</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1521">Surface Water Rights (Utah)</a></td>
+								<td><a href="#modal-1521" onclick="myPillFilter('Utah')">Surface Water Rights (Utah)</a></td>
 								<td>Utah</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1547">Surface Water Rights (Vermont)</a></td>
+								<td><a href="#modal-1547" onclick="myPillFilter('Vermont')">Surface Water Rights (Vermont)</a></td>
 								<td>Vermont</td>
 								<td>Riparian</td>
 								<td>no limit</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1561">Surface Water Rights (Virginia)</a></td>
+								<td><a href="#modal-1561" onclick="myPillFilter('Virginia')">Surface Water Rights (Virginia)</a></td>
 								<td>Virginia</td>
 								<td>Regulated riparian</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1582">Surface Water Rights (Washington)</a></td>
+								<td><a href="#modal-1582" onclick="myPillFilter('Washington')">Surface Water Rights (Washington)</a></td>
 								<td>Washington</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1635">Surface Water Rights (West Virginia)</a></td>
+								<td><a href="#modal-1635" onclick="myPillFilter('West Virginia')">Surface Water Rights (West Virginia)</a></td>
 								<td>West Virginia</td>
 								<td>Riparian</td>
 								<td>no limit</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1652">Surface Water Rights (Wisconsin)</a></td>
+								<td><a href="#modal-1652" onclick="myPillFilter('Wisconsin')">Surface Water Rights (Wisconsin)</a></td>
 								<td>Wisconsin</td>
 								<td>Regulated riparian</td>
 								<td>100,000</td>
 							</tr>
 							<tr>
-								<td><a href="#modal-1717">Surface Water Rights (Wyoming)</a></td>
+								<td><a href="#modal-1717" onclick="myPillFilter('Wyoming')">Surface Water Rights (Wyoming)</a></td>
 								<td>Wyoming</td>
 								<td>Prior appropriation</td>
 								<td>0</td>
@@ -1249,12 +1265,12 @@ $(window).bind("load", function() {
 			wv:'#718F9D',
 			wi:'#3BA48A',
 			wy:'#8C4845'			
-			},
+			}/*,
 			onRegionClick: function (event, code, region) {
 			switch (code) {
 				case "wy":window.location = "#modal-1716";break;
 				}
-			}
+			}*/
 		});
 		
 		jQuery('#uicHaz').vectorMap({		

@@ -87,6 +87,7 @@ function loadDataTable() {
 				"targets": [ 6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 ],
 				"visible": false
 			},			
+			/*
 			{
 				"targets": 1,
 				"width": "80px"
@@ -98,7 +99,9 @@ function loadDataTable() {
 			{
 				"targets": 5,
 				"width": "50px"
-			}
+			}*/
+			{width:80, targets: [1,2]},
+			{width:180, targets: 0}
 			
 		],
 		order:[[1, "desc"]],
@@ -106,7 +109,8 @@ function loadDataTable() {
             "sLengthMenu": "_MENU_ records per page"
         },
         iDisplayLength: 25,
-		fixedHeader: true,		
+		//fixedHeader: true,		
+		fixedColumns: true,
 		buttons: [
 			
 			{
