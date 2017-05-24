@@ -102,7 +102,8 @@ function loadDataTable() {
 			}*/
 			{width:180, targets: 0},
 			{width:80, targets: [1,2]},	
-			{width:180, targets: [3,4]},	
+			{width:180, targets: 3}, 	
+			{width:100, targets: 4}, 
 			{width:180, targets: 5}
 			
 		],
