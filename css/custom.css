@@ -1,9 +1,8 @@
 /* font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Roboto', sans-serif; */
-html {margin:0;padding:0;background: rgba(0, 0, 0, 0) url(../images/site-bg.jpg) no-repeat fixed 0 0 / cover;}
-body {padding:120px 0 15px 0;margin:0;
-font-family:'Roboto Condensed', Arial, sans-serif;font-size:13px;line-height:1.4;}
-.globalWrapper { background-color: rgba(42, 63, 84, 0.0); margin: 0; padding: 0;}
+html {margin:0;padding:0;background-color:#232323;}
+body {padding:120px 0 15px 0;margin:0;font-family:'Roboto Condensed', Arial, sans-serif;font-size:13px;line-height:1.4;background: url(../images/site-bg.jpg) no-repeat fixed 0 0 / cover;}
+.globalWrapper { background-color: rgba(42, 63, 84, 0.0); margin: 0; padding: 0;position:relative;z-index:1;}
 
 a{text-decoration:none;color:#0AA3CF;}
 #content p, #content h1, #content h2, #content h3, #content h4 {display: inline-block;margin: 5px 0;}
@@ -150,6 +149,8 @@ footer small {font-size:10px;margin:0;}
 .dataTables_wrapper .dataTables_info {padding-left:5px;}
 
 .custom-tooltip-styling {z-index:9999;}
+
+#searchable-table {table-layout:fixed;}
 
 #overviewWrap {position:relative;display: table;}
 
