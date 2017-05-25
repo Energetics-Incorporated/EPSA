@@ -106,6 +106,7 @@ function loadDataTable() {
 			{width:180, targets: 3}, 	
 			{width:100, targets: 4}, 
 			{width:180, targets: 5}			
+
 		],
 		order:[[1, "desc"]],
 		oLanguage: {
