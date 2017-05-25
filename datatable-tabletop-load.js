@@ -100,9 +100,12 @@ function loadDataTable() {
 				"targets": 5,
 				"width": "50px"
 			}*/
-			{width:80, targets: [1,2]},
-			{width:180, targets: 0}
-			
+			{width:180, targets: 0}, 
+			{width:100, targets: 1}, 
+			{width:80, targets: 2},	
+			{width:180, targets: 3}, 	
+			{width:100, targets: 4}, 
+			{width:180, targets: 5}			
 		],
 		order:[[1, "desc"]],
 		oLanguage: {
@@ -251,7 +254,7 @@ function initializeTabletopObject(){
 	Tabletop.init({
     	key: public_spreadsheet_url,
     	callback: loadToDOM,
-    	simpleSheet: false,
+    	simpleSheet: true,
     	debug: false
     });
 }
