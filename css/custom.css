@@ -111,6 +111,7 @@ background: #ebebeb url(../images/masthead2.jpg) no-repeat fixed 0px 0px / cover
 option {max-width:100px;}
 .yadcf-filter-wrapper {
     display: block;
+	margin-left:0;
 }
 
 .dt-button.buttons-columnVisibility {padding:10px;}
@@ -446,4 +447,26 @@ ul.select2-choices li {height:14px;}
 button.yadcf-filter-reset-button {
     vertical-align: top;
 }
+table.dataTable thead th, table.dataTable thead td {padding:10px 8px;}
+#yadcf-filter--searchable-table-1 {width:63px;}
 
+table.dataTable th {
+    border-right: 1px solid #ccc;
+    padding-left: 20px !important;
+    text-align: left;
+    border-top: 1px solid #ccc;
+	background-color:#fff;
+}
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled {
+    background-position: 0 65%;
+}
+th.sorting:hover, th.sorting_desc:hover {
+    background: #aaa;
+}
+
+/* ----- for Internet Explorer... ------ */
+@media screen and (min-width:0\0) {
+	button.yadcf-filter-reset-button {padding:0 5px;}
+	.select2-container-multi .select2-choices {min-height:18px;}
+	#yadcf-filter--searchable-table-1 {height:20px;}
+}

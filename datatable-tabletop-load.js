@@ -101,19 +101,18 @@ function loadDataTable() {
 				"width": "50px"
 			}*/
 			{width:180, targets: 0}, 
-			{width:100, targets: 1}, 
-			{width:80, targets: 2},	
-			{width:180, targets: 3}, 	
-			{width:100, targets: 4}, 
-			{width:180, targets: 5}			
+			{width:80, targets: 1}, 
+			{width:100, targets: 2},	
+			{width:200, targets: 3}, 	
+			{width:150, targets: 4}, 
+			{width:280, targets: 5}			
 
 		],
 		order:[[1, "desc"]],
 		oLanguage: {
             "sLengthMenu": "_MENU_ records per page"
         },
-        iDisplayLength: 25,
-		//fixedHeader: true,		
+        iDisplayLength: 25,		
 		fixedColumns: true,
 		buttons: [
 			
@@ -183,35 +182,46 @@ yadcf.init(oTable,
 			column_number: 0,
 			filter_type: "text",
 	        text_data_delimiter: ",",
-			filter_default_label: "Name"
+			filter_default_label: "Name",
+			select_type_options: {
+            width: '180px'}
 		}, 
 		{
-			column_number: 1
-			//filter_type: "multi_select",
-			//select_type: "select2",
-			//width:"80px"
+			column_number: 1,
+			select_type_options: {
+            width: '50px'},
+			filter_default_label: "Select"
+			
 		}, 
 		{
 			column_number: 2,
 			filter_type: "multi_select",
-			select_type: "select2",
-			width:"80px"
+			select_type: "select2",			
+			select_type_options: {
+            width: '80px'},
+			filter_default_label: "Select"
 		}, 
 		{
 			column_number: 3,
 			filter_type: "multi_select",
-			select_type: "select2"
+			select_type: "select2",
+			select_type_options: {
+            width: '180px'}
 		}, 
 		{
 			column_number: 4, 
 			filter_type: "multi_select",
-			select_type: "select2"
+			select_type: "select2",
+			select_type_options: {
+            width: '140px'}
 		},
 		{
 			column_number: 5,
 			width:"50px",
 			filter_type: "multi_select",
-			select_type: "select2"
+			select_type: "select2",
+			select_type_options: {
+            width: '280px'}
 		}/*,
 		{
 			column_number: 21, 			
