@@ -1,7 +1,53 @@
 /* font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Roboto', sans-serif; */
+
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('../fonts/RobotoCondensed-Bold-webfont.eot');
+    src: url('../fonts/RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoCondensed-Bold-webfont.woff') format('woff'),
+         url('../fonts/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'roboto_condensedbold_italic';
+    src: url('../fonts/RobotoCondensed-BoldItalic-webfont.eot');
+    src: url('../fonts/RobotoCondensed-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoCondensed-BoldItalic-webfont.woff') format('woff'),
+         url('../fonts/RobotoCondensed-BoldItalic-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoCondensed-BoldItalic-webfont.svg#roboto_condensedbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('../fonts/RobotoCondensed-Regular-webfont.eot');
+    src: url('../fonts/RobotoCondensed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff'),
+         url('../fonts/RobotoCondensed-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoCondensed-Regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'roboto_condenseditalic';
+    src: url('../fonts/RobotoCondensed-Italic-webfont.eot');
+    src: url('../fonts/RobotoCondensed-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/RobotoCondensed-Italic-webfont.woff') format('woff'),
+         url('../fonts/RobotoCondensed-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/RobotoCondensed-Italic-webfont.svg#roboto_condenseditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 html {margin:0;padding:0;background-color:#232323;}
-body {padding:120px 0 15px 0;margin:0;font-family:'Roboto Condensed', Arial, sans-serif;font-size:13px;line-height:1.4;background: url(../images/site-bg.jpg) no-repeat fixed 0 0 / cover;}
+body {padding:120px 0 15px 0;margin:0;font-family:'roboto_condensedregular', Arial, sans-serif;font-size:13px;line-height:1.4;background: url(../images/site-bg.jpg) no-repeat fixed 0 0 / cover;}
 .globalWrapper { background-color: rgba(42, 63, 84, 0.0); margin: 0; padding: 0;position:relative;z-index:1;}
 
 a{text-decoration:none;color:#0AA3CF;}
@@ -463,6 +509,8 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
 th.sorting:hover, th.sorting_desc:hover {
     background: #aaa;
 }
+
+.mapCaption p {font-size:11px;}
 
 /* ----- for Internet Explorer... ------ */
 @media screen and (min-width:0\0) {
