@@ -1,0 +1,252 @@
+var statesummaries = [
+ {
+   "ID": 1,
+   "State": "Alabama",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 2,
+   "State": "Alaska",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 500\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 500\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 3,
+   "State": "Arizona",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: \nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 4,
+   "State": "Arkansas",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 893\n\nGroundwater Rights Doctrine: Multiple\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 5,
+   "State": "California",
+   "Summary": "Surface Water Rights Doctrine: Multiple\nSurface Water Rights Reporting/Permit Threshold (gpd): 8930\n\nGroundwater Rights Doctrine: Multiple\nGrundwater Rights Reporting/Permit Threshold (gpd): 8930\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 6,
+   "State": "Colorado",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 7,
+   "State": "Connecticut",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 8,
+   "State": "Delaware",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 9,
+   "State": "Florida",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 10,
+   "State": "Georgia",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 11,
+   "State": "Hawaii",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 12,
+   "State": "Idaho",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 13,
+   "State": "Illinois",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 14,
+   "State": "Indiana",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 15,
+   "State": "Iowa",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 16,
+   "State": "Kansas",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 17,
+   "State": "Kentucky",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 18,
+   "State": "Louisiana",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 19,
+   "State": "Maine",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 20,
+   "State": "Maryland",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 21,
+   "State": "Massachusetts",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 22,
+   "State": "Michigan",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 23,
+   "State": "Minnesota",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 24,
+   "State": "Mississippi",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 25,
+   "State": "Missouri",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 26,
+   "State": "Montana",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 27,
+   "State": "Nebraska",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 28,
+   "State": "Nevada",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 29,
+   "State": "New Hampshire",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 30,
+   "State": "New Jersey",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 31,
+   "State": "New Mexico",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 32,
+   "State": "New York",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 33,
+   "State": "North Carolina",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 34,
+   "State": "North Dakota",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 35,
+   "State": "Ohio",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 36,
+   "State": "Oklahoma",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 37,
+   "State": "Oregon",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 38,
+   "State": "Pennsylvania",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 39,
+   "State": "Rhode Island",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 40,
+   "State": "South Carolina",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 41,
+   "State": "South Dakota ",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 42,
+   "State": "Tennessee",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 43,
+   "State": "Texas",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 44,
+   "State": "Utah",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 45,
+   "State": "Vermont",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 46,
+   "State": "Virginia",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 47,
+   "State": "Washington",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 48,
+   "State": "West Virginia",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 49,
+   "State": "Wisconsin",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ },
+ {
+   "ID": 50,
+   "State": "Wyoming",
+   "Summary": "Surface Water Rights Doctrine:\nSurface Water Rights Reporting/Permit Threshold (gpd):\n\nGroundwater Rights Doctrine:\nGrundwater Rights Reporting/Permit Threshold (gpd):\n\nUndergound Injection Control Authority\nClass I Hazardous:\nClass I Non-hazardous:\nClass II:\n\nKey Regulatory Agencies:\n"
+ }
+]
