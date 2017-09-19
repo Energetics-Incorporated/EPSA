@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "epsa";
-  src:url("fonts/epsa.eot");
-  src:url("fonts/epsa.eot?#iefix") format("embedded-opentype"),
+  src:url("../fonts/epsa.eot");
+  src:url("../fonts/epsa.eot?#iefix") format("embedded-opentype"),
     /*url("fonts/epsa.woff") format("woff"),*/
-    url("fonts/epsa.ttf") format("truetype"),
-    url("fonts/epsa.svg#epsa") format("svg");
+    url("../fonts/epsa.ttf") format("truetype"),
+    url("../fonts/epsa.svg#epsa") format("svg");
   font-weight: normal;
   font-style: normal;
 

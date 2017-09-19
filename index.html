@@ -6,9 +6,7 @@
 <script>
 paceOptions = {
   ghostTime: 1200,
-  ajax: {
-    trackMethods: ['GET']
-	},
+  restartOnPushState: false,
   elements: {
     selectors: ['.btn-vwqs']
   }
@@ -17,76 +15,76 @@ paceOptions = {
 <link href="css/progress.css" rel="stylesheet" media="screen">
 <script src="js/pace.min.js"></script>
 <link href="fonts/fonts.css" rel="stylesheet">
-<link href="styles.css" rel="stylesheet" media="screen">
+<link href="css/styles.css" rel="stylesheet" media="screen">
 <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="jquery.dataTables.yadcf.css" rel="stylesheet">
-<link href="buttons.1.3.1.dataTables.min.css" rel="stylesheet">
+<link href="css/jquery.dataTables.yadcf.css" rel="stylesheet">
+<link href="css/buttons.1.3.1.dataTables.min.css" rel="stylesheet">
 <link href="yadcf-master/select2.css" rel="stylesheet">
 <link href="jquery-ui-1.12.0.custom/jquery-ui.min.css" rel="stylesheet">
 <link href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+<link href="js/jqvmap/jqvmap.min.css" rel="stylesheet">
 <link href="css/custom.css" rel="stylesheet">
+<link rel="stylesheet" href="js/jquery.fancybox.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
 <script src="src/tabletop.js"></script>
-<script src="handlebars-v4.0.5.js"></script>
-<script src="underscore.js"></script>
+<script src="js/handlebars-v4.0.5.js"></script>
+<script src="js/underscore.js"></script>
 <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-<script src="jquery.dataTables.yadcf.js"></script>
-<script src="dataTables.buttons.1.3.1.min.js"></script>
-<script src="buttons.colVis.1.3.1min.js"></script>
+<script src="js/jquery.dataTables.yadcf.js"></script>
+<script src="js/dataTables.buttons.1.3.1.min.js"></script>
+<script src="js/buttons.colVis.1.3.1min.js"></script>
 <script src="yadcf-master/select2.js"></script>
+<script src="js/linkify.min.js"></script>
+<script src="js/linkify-jquery.min.js"></script>
 </head>
 
 <body>
 <div id="wait">The Energy-Water Policy Database is currently working on loading 1,700+ records.<br>You'll be searching, sorting, and exploring the data shortly!</div>
-<div class="globalWrapper">
-	
-	<div id="masthead">
+<div class="globalWrapper" style="opacity:0;">	
+	<div id="masthead" style="opacity:0;">
 		<div class="inner">
 			<header>
 				<h1>Energy-Water Policy Database</h1>
 				<h2>A database of U.S. state-level water policies and programs affecting energy systems <strong>BETA</strong></h2>
 				<h3>U.S. Department of Energy (DOE), Office of Energy Policy and Systems Analysis (EPSA)</h3>
-				<p>REQUEST FOR YOUR FEEDBACK AND IDEAS:<br>
-				We invite your comments for making the database design and content as useful, accurate, and up-to-date as possible. 
-				This draft database is a "beta" version and a work-in-progress. 
-				To submit feedback, please respond to the <a target="_blank" href="https://www.federalregister.gov/documents/2017/06/05/2017-11547/requests-for-information-review-of-draft-version-of-energy-water-nexus-state-policy-database">Request for Information</a> by email to <a href="mailto:EPSA.database@hq.doe.gov" target="_blank">EPSA.database@hq.doe.gov</a>.  
+				<p>This draft database is a &ldquo;beta&rdquo; version and a work-in-progress. To submit comments, feedback, or ideas related to the draft database, please send an email to <a href="mailto:EPSA.database@hq.doe.gov" target="_blank">EPSA.database@hq.doe.gov</a>.  
 				</p>
 			</header>
 			<nav>
 				<ul>
-					<!-- <li class="active"><a href="#">Home</a></li> -->
 					<li><a href="#" class="showOverview">Overview</a></li>
-					<li><a href="#Maps">Maps</a></li>
-					<li><a href="#glossary">Glossary</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="#Resources">DOE Resources</a></li>
-					<li><a href="#Contact">Contact</a></li>
+					<li><a data-fancybox="PAGE" data-type="inline" data-src="#Maps" class="showModal" href="javascript:;">Maps</a></li>
+					<li><a data-fancybox="PAGE" data-type="inline" data-src="#glossary" class="showModal" href="javascript:;">Glossary</a></li>
+					<li><a data-fancybox="PAGE" data-type="inline" data-src="#About" class="showModal" href="javascript:;">About</a></li>
+					<li><a data-fancybox="PAGE" data-type="inline" data-src="#Resources" class="showModal" href="javascript:;">DOE Resources</a></li>
+					<li><a data-fancybox="PAGE" data-type="inline" data-src="#Contact" class="showModal" href="javascript:;">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</div>
-	<!-- /#masthead -->
-	
+	<!-- /#masthead -->	
 	<div id="overviewWrap" class="inner">
 		<div id="overview">
 			<div id="overviewLeft">
 				<div class="inner">
-					<h2>Overview</h2>
-					
-					<p>This draft database provides an extensive source of key information about state-level water policies and programs that are relevant to energy systems in the United States. The goals of the database are to facilitate improved policy analysis, modeling, visualization, and communication by states, industry, utilities, academia, federal agencies, and other stakeholders. There are more than 1,700 policy entries in the draft database, including:</p>
-					<ul>
-						<li>State and national pollutant discharge elimination system (PDES and NPDES) permitting programs affecting electricity generation and oil and gas production facilities</li>
-						<li>Underground injection control permitting for the oil and gas sector</li>
-						<li>Policies affecting surface water rights and groundwater rights</li>
-						<li>Water quality standards affecting energy systems</li>
-						<li>Hydraulic fracturing water regulations</li>
-						<li>River and/or dam operations affecting hydropower and/or thermoelectric cooling</li>
-						<li>Water regulations impacting electric generation</li>
-					</ul>
-					<p>Each policy entry includes searchable fields such as jurisdiction, dates enacted, energy subsector affected, water body affected, relevant statute, contact information of implementing authority, and a concise summary of the policy. The full draft database is also downloadable in <a href="https://docs.google.com/spreadsheets/d/1xQ5IjvU6H6LOqtYaJhiZo93lq5J6N0xiViZSEZpHQd4/edit?usp=sharing" target="_blank">spreadsheet format</a>.</p>
-					<p>Explore the draft database by using the filters below.</p>			
-					
+					<div id="placeholder">
+						<h2>Overview</h2>
+						
+						<p>This draft database provides an extensive source of key information about state-level water policies and programs that are relevant to energy systems in the United States. The goals of the database are to facilitate improved policy analysis, modeling, visualization, and communication by states, industry, utilities, academia, federal agencies, and other stakeholders. There are more than 1,700 policy entries in the draft database, including:</p>
+						<ul>
+							<li>State and national pollutant discharge elimination system (PDES and NPDES) permitting programs affecting electricity generation and oil and gas production facilities</li>
+							<li>Underground injection control permitting for the oil and gas sector</li>
+							<li>Policies affecting surface water rights and groundwater rights</li>
+							<li>Water quality standards affecting energy systems</li>
+							<li>Hydraulic fracturing water regulations</li>
+							<li>River and/or dam operations affecting hydropower and/or thermoelectric cooling</li>
+							<li>Water regulations impacting electric generation</li>
+						</ul>
+						<p>Each policy entry includes searchable fields such as jurisdiction, dates enacted, energy subsector affected, water body affected, relevant statute, contact information of implementing authority, and a concise summary of the policy. The full draft database is also downloadable in <a href="https://docs.google.com/spreadsheets/d/1xQ5IjvU6H6LOqtYaJhiZo93lq5J6N0xiViZSEZpHQd4/edit?usp=sharing" target="_blank">spreadsheet format</a>.</p>
+						<p>Explore the draft database by using the filters below.</p>						
+					</div>
+					<div id="stateSummary"> </div>
 					<!--
 					<span onclick="yadcf.exFilterExternallyTriggered (oTable, [[2, 'Federal']]);">Federal</span>
 					<span id="external_filter_container_2">Federal</span>					
@@ -98,10 +96,7 @@ paceOptions = {
 								<option value="Regional">Regional</option>
 								<option value="State">State</option>
 							</select>
-							<button type="button" onmousedown="yadcf.stopPropagation(event);" onclick="yadcf.stopPropagation(event);yadcf.doFilter('clear', '-searchable-table', 2); return false;" class="yadcf-filter-reset-button">x</button>
-							
-							
-							
+							<button type="button" onmousedown="yadcf.stopPropagation(event);" onclick="yadcf.stopPropagation(event);yadcf.doFilter('clear', '-searchable-table', 2); return false;" class="yadcf-filter-reset-button">x</button>							
 						</div>
 					</div>
 					-->
@@ -109,16 +104,13 @@ paceOptions = {
 						<div id="some_data" class="hide"></div>
 					</div>
 				</div>
-			</div>
-			
-        
+			</div>        
 			<div id="overviewRight">
 				<div id="vmap"></div>
 			</div>
 			<a href="#" class="toggleDiv">Hide<span class="icon-chevron-up"></span></a> </div>
 	</div>
-	<script type="text/javascript">
-
+<script type="text/javascript">
 
 $(".toggleDiv").click(function() {
   $("#overview").slideToggle("slow", function(){
@@ -127,11 +119,14 @@ $(".toggleDiv").click(function() {
 });
 
 $(".showOverview").click(function(){
-	$("#overview").slideDown("slow", "easeOutBounce");
+	$("#overview").slideDown("slow", "easeOutBounce");	
+	$("#placeholder").show();
+	$(".stateSummaryList").hide();
 });
 
 $(".showOverview").click(function(){	
 	$("#overview").effect( "bounce", {times:3, distance:5, direction:"left"}, 400 );
+	$("#placeholder").show();
 });
 
 </script>
@@ -191,17 +186,17 @@ $(".showOverview").click(function(){
 			</tr>
 		</tfoot>
 	</table>
-	<div id="loading"></div>
-	<footer>
+<!--	<div id="loading"></div> -->
+	<footer style="opacity:0;">
 		<p>Copyright &copy; 2016</p>
 		<small>Photograph by <a href="https://www.flickr.com/photos/lng0004/9731936134/in/photolist-fPYHyj-bB7cxt-nAkuos-hSkW9j-d9X6nB-dmTB3w-ieL4Js-avnYB5-nQJEKq-oU8SML-bukFcS-nmFVCB-mu5at6-5DiCwm-8gUb8B-5X7sgo-3tgEQW-3XivvG-6swjvL-oGXNQ2-adjxUn-kxFhw4-aWvdR8-bd5peT-kfmx5d-aWvebR-8CD8cs-9Aupc9-aWveNZ-nrA5q5-nrzZ2k-bxZmo6-agp9Dx-ec4Vqm-kPUmvz-dXJeVo-e3GmYp-567oZm-doNK6C-nyKcze-34cybZ-Jmcszf-fpZ4F5-arnNj6-7Zn1FA-atqydq-5TFksA-5ta65F-cWkn4b-H1SkmF" target="_blank">Linh Nguyen</a></small> </footer>
 	<script id="datatable-template" type="text/x-handlebars-template">
 		{{#each elements}}
             <tr>
 				
-<td data-title="Name:"><a href="#modal-{{ID}}">{{Name}}</a>
-<div class="modal" id="modal-{{ID}}">
-  <div class='modal-content'>
+<td data-title="Name:"><a data-anchor="{{ID}}" href="#modal-{{ID}}">{{Name}}</a>
+<div class="modal2" id="modal-{{ID}}">
+  <div class='modal-content2'>
     <div class="contentWrap">
         <a class="close" href="#">close</a>
         <h2 class="Name">{{Name}}</h2>
@@ -263,7 +258,7 @@ $(".showOverview").click(function(){
 			
 
 </script> 
-	<script src="datatable-tabletop-load.js"></script> 
+	<script src="js/datatable-tabletop-load.js"></script> 
 	<script type="text/javascript">
 
 Handlebars.registerHelper('cleanConcat', function() {
@@ -331,18 +326,17 @@ Handlebars.registerHelper('wrapURL', function(str) {
     });
 }());
 
-
 </script>
-	<link href="js/jqvmap/jqvmap.min.css" rel="stylesheet">
-	<script src="js/jqvmap/jquery.vmap.min.js"></script> 
-	<script src="js/jqvmap/maps/jquery.vmap.usa.js"></script> 
-	<script type="text/javascript">
+<script src="js/jqvmap/jquery.vmap.min.js"></script> 
+<script src="js/jqvmap/maps/jquery.vmap.usa.js"></script> 
+<script type="text/javascript">
 $(window).bind("load", function() {
+
      $('.globalWrapper').on('click','.btn-vwqs',function() {
         $(this).toggleClass("active");
     });
 	
-	$("#loading").fadeOut("slow");    
+	//$("#loading").fadeOut("slow");    
 	
 	$(function() {
 		 $( document ).tooltip({
@@ -353,29 +347,6 @@ $(window).bind("load", function() {
 				  }
                });
 	});
-	
-	/*
-	$('#searchable-table').on('mouseover', this, function(){
-		$( "#yadcf-filter--searchable-table-0" ).tooltip({
-		  content: "Official name of policy or program.",
-		  items: "div",
-		  tooltipClass: "custom-tooltip-styling",
-		  position: { my: "left top", at: "left center" }
-		});
-	});
-	*/
-	/*
-	function sizeMap() {
-    var containerWidth = $('#overviewRight').width(),
-        containerHeight = (containerWidth / 1.4);
-	
-    $('#vmap').css({
-        'width': containerWidth,
-        'height': containerHeight
-    });
-		
-	}
-	*/
 	
 	jQuery('#vmap').vectorMap({
 		map: 'usa_en',
@@ -388,71 +359,66 @@ $(window).bind("load", function() {
 		hoverColor: 'rgba(42,63,84,1.0)',
 		onRegionClick: function (event, code, region) {
 			switch (code) {
-				case "ak":myPillFilter('Alaska');break;
-				case "al":myPillFilter('Alabama');break;
-				case "ar":myPillFilter('Arkansas');break;
-				case "az":myPillFilter('Arizona');break;
-				case "ca":myPillFilter('California');break;
-				case "co":myPillFilter('Colorado');break;
-				case "ct":myPillFilter('Connecticut');break;
+				case "al":myPillFilter('Alabama');$("#state-1").show().siblings("div").hide();break;
+				case "ak":myPillFilter('Alaska');$("#state-2").show().siblings("div").hide();break;
+				case "az":myPillFilter('Arizona');$("#state-3").show().siblings("div").hide();break;
+				case "ar":myPillFilter('Arkansas');$("#state-4").show().siblings("div").hide();break;
+				case "ca":myPillFilter('California');$("#state-5").show().siblings("div").hide();break;
+				case "co":myPillFilter('Colorado');$("#state-6").show().siblings("div").hide();break;
+				case "ct":myPillFilter('Connecticut');$("#state-7").show().siblings("div").hide();break;
 				case "dc":myPillFilter('District of Columbia');break;
-				case "de":myPillFilter('Delaware');break;
-				case "fl":myPillFilter('Florida');break;
-				case "ga":myPillFilter('Georgia');break;
-				case "hi":myPillFilter('Hawaii');break;
-				case "ia":myPillFilter('Iowa');break;
-				case "id":myPillFilter('Idaho');break;
-				case "il":myPillFilter('Illinois');break;
-				case "in":myPillFilter('Indiana');break;
-				case "ks":myPillFilter('Kansas');break;
-				case "ky":myPillFilter('Kentucky');break;
-				case "la":myPillFilter('Louisiana');break;
-				case "ma":myPillFilter('Massachusetts');break;
-				case "md":myPillFilter('Maryland');break;
-				case "me":myPillFilter('Maine');break;
-				case "mi":myPillFilter('Michigan');break;
-				case "mn":myPillFilter('Minnesota');break;
-				case "mo":myPillFilter('Missouri');break;
-				case "ms":myPillFilter('Mississippi');break;
-				case "mt":myPillFilter('Montana');break;
-				case "nc":myPillFilter('North Carolina');break;
-				case "nd":myPillFilter('North Dakota');break;
-				case "ne":myPillFilter('Nebraska');break;
-				case "nh":myPillFilter('New Hampshire');break;
-				case "nj":myPillFilter('New Jersey');break;
-				case "nm":myPillFilter('New Mexico');break;
-				case "nv":myPillFilter('Nevada');break;
-				case "ny":myPillFilter('New York');break;
-				case "oh":myPillFilter('Ohio');break;
-				case "ok":myPillFilter('Oklahoma');break;
-				case "or":myPillFilter('Oregon');break;
-				case "pa":myPillFilter('Pennsylvania');break;
-				case "ri":myPillFilter('Rhode Island');break;
-				case "sc":myPillFilter('South Carolina');break;
-				case "sd":myPillFilter('South Dakota');break;
-				case "tn":myPillFilter('Tennessee');break;
-				case "tx":myPillFilter('Texas');break;
-				case "ut":myPillFilter('Utah');break;
-				case "va":myPillFilter('Virginia');break;
-				case "vt":myPillFilter('Vermont');break;
-				case "wa":myPillFilter('Washington');break;
-				case "wi":myPillFilter('Wisconsin');break;
-				case "wv":myPillFilter('West Virginia');break;
-				case "wy":myPillFilter('Wyoming');break;
+				case "de":myPillFilter('Delaware');$("#state-8").show().siblings("div").hide();break;
+				case "fl":myPillFilter('Florida');$("#state-9").show().siblings("div").hide();break;
+				case "ga":myPillFilter('Georgia');$("#state-10").show().siblings("div").hide();break;
+				case "hi":myPillFilter('Hawaii');$("#state-11").show().siblings("div").hide();break;
+				case "id":myPillFilter('Idaho');$("#state-12").show().siblings("div").hide();break;
+				case "il":myPillFilter('Illinois');$("#state-13").show().siblings("div").hide();break;
+				case "in":myPillFilter('Indiana');$("#state-14").show().siblings("div").hide();break;
+				case "ia":myPillFilter('Iowa');$("#state-15").show().siblings("div").hide();break;
+				case "ks":myPillFilter('Kansas');$("#state-16").show().siblings("div").hide();break;
+				case "ky":myPillFilter('Kentucky');$("#state-17").show().siblings("div").hide();break;
+				case "la":myPillFilter('Louisiana');$("#state-18").show().siblings("div").hide();break;
+				case "me":myPillFilter('Maine');$("#state-19").show().siblings("div").hide();break;
+				case "md":myPillFilter('Maryland');$("#state-20").show().siblings("div").hide();break;
+				case "ma":myPillFilter('Massachusetts');$("#state-21").show().siblings("div").hide();break;	
+				case "mi":myPillFilter('Michigan');$("#state-22").show().siblings("div").hide();break;
+				case "mn":myPillFilter('Minnesota');$("#state-23").show().siblings("div").hide();break;
+				case "ms":myPillFilter('Mississippi');$("#state-24").show().siblings("div").hide();break;
+				case "mo":myPillFilter('Missouri');$("#state-25").show().siblings("div").hide();break;				
+				case "mt":myPillFilter('Montana');$("#state-26").show().siblings("div").hide();break;				
+				case "ne":myPillFilter('Nebraska');$("#state-27").show().siblings("div").hide();break;
+				case "nv":myPillFilter('Nevada');$("#state-28").show().siblings("div").hide();break;
+				case "nh":myPillFilter('New Hampshire');$("#state-29").show().siblings("div").hide();break;
+				case "nj":myPillFilter('New Jersey');$("#state-30").show().siblings("div").hide();break;
+				case "nm":myPillFilter('New Mexico');$("#state-31").show().siblings("div").hide();break;				
+				case "ny":myPillFilter('New York');$("#state-32").show().siblings("div").hide();break;
+				case "nc":myPillFilter('North Carolina');$("#state-33").show().siblings("div").hide();break;
+				case "nd":myPillFilter('North Dakota');$("#state-34").show().siblings("div").hide();break;
+				case "oh":myPillFilter('Ohio');$("#state-35").show().siblings("div").hide();break;
+				case "ok":myPillFilter('Oklahoma');$("#state-36").show().siblings("div").hide();break;
+				case "or":myPillFilter('Oregon');$("#state-37").show().siblings("div").hide();break;
+				case "pa":myPillFilter('Pennsylvania');$("#state-38").show().siblings("div").hide();break;
+				case "ri":myPillFilter('Rhode Island');$("#state-39").show().siblings("div").hide();break;
+				case "sc":myPillFilter('South Carolina');$("#state-40").show().siblings("div").hide();break;
+				case "sd":myPillFilter('South Dakota');$("#state-41").show().siblings("div").hide();break;
+				case "tn":myPillFilter('Tennessee');$("#state-42").show().siblings("div").hide();break;
+				case "tx":myPillFilter('Texas');$("#state-43").show().siblings("div").hide();break;
+				case "ut":myPillFilter('Utah');$("#state-44").show().siblings("div").hide();break;
+				case "vt":myPillFilter('Vermont');$("#state-45").show().siblings("div").hide();break;
+				case "va":myPillFilter('Virginia');$("#state-46").show().siblings("div").hide();break;				
+				case "wa":myPillFilter('Washington');$("#state-47").show().siblings("div").hide();break;
+				case "wv":myPillFilter('West Virginia');$("#state-48").show().siblings("div").hide();break;
+				case "wi":myPillFilter('Wisconsin');$("#state-49").show().siblings("div").hide();break;				
+				case "wy":myPillFilter('Wyoming');$("#state-50").show().siblings("div").hide();break;
 			}
 		}
 	});
-	/*
-	sizeMap();
-	$(window).on("resize", sizeMap);
-	*/
+
 });
-
-
 </script>
-	<div class="modal" id="glossary">
+	<div class="modal" id="glossary" data-popup="popup-1">
 		<div class="modal-content pageWrap">
-			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+			<div class="contentWrap pageContent">
 				<table cellspacing="0" cellpadding="5" border="0" width="100%">
 					<caption>
 					Glossary
@@ -551,22 +517,22 @@ $(window).bind("load", function() {
 			</div>
 		</div>
 	</div>
-	<div class="modal" id="About">
+	<div class="modal" id="About" data-popup="popup-2">
 		<div class="modal-content pageWrap">
-			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+			<div class="contentWrap pageContent">
 				<h2>About</h2>
-				<p>The draft database was  commissioned by the U.S. Department of Energy&rsquo;s (DOE) Office of Energy Policy  and Systems Analysis (EPSA). Under contract to DOE, Energetics Incorporated  researched and gathered the information for the draft database and developed the  web-based tool.</p>
-				<p>This draft database provides an extensive source of key  information about state-level water policies and programs that are relevant to  energy systems in the United States. The goals of the database are to  facilitate improved policy analysis, modeling, visualization, and communication  by states, industry, utilities, academia, federal agencies, and other  stakeholders.</p>
-				<p>DOE-EPSA invites your comments and  feedback as stakeholders and potential users so that we can make the database  design and content as useful, accurate, and up-to-date as possible. This draft  database is a &ldquo;beta&rdquo; version and a work-in-progress. To submit feedback, please  respond to the <a target="_blank" href="https://www.federalregister.gov/documents/2017/06/05/2017-11547/requests-for-information-review-of-draft-version-of-energy-water-nexus-state-policy-database">Request  for Information</a> by email to <a href="mailto:EPSA.database@hq.doe.gov" target="_blank">EPSA.database@hq.doe.gov</a>.</p>
-				<p>All data were gathered from public  sources. Links and contact information are provided for users requiring further  information.&nbsp;Users are encouraged to refer to these links for original  source materials with additional details.</p>
-				<p><em>Disclaimer:</em> <em>This work was prepared as an account of work  sponsored by an agency of the United States Government. Neither the United  States Government nor any agency thereof, nor any of their employees, nor any  of their contractors, subcontractors or their employees, makes any warranty,  express or implied, or assumes any legal liability or responsibility for the  accuracy, completeness, or any third party&rsquo;s use or the results of such use of  any information, apparatus, product, or process disclosed, or represents that  its use would not infringe privately owned rights. Reference herein to any  specific commercial product, process, or service by trade name, trademark,  manufacturer, or otherwise, does not necessarily constitute or imply its  endorsement, recommendation, or favoring by the United States Government or any  agency thereof or its contractors or subcontractors. The views and opinions of  authors expressed herein do not necessarily state or reflect those of the  United States Government or any agency thereof, its contractors or  subcontractors.</em></p>
+				<p>The draft database was commissioned by the U.S. Department of Energy&rsquo;s (DOE) Office of Energy Policy and Systems Analysis (EPSA). Under contract to DOE, Energetics Incorporated researched and gathered the information for the draft database and developed the web-based tool.</p>
+				<p>This draft database provides an extensive source of key information about state-level water policies and programs that are relevant to energy systems in the United States. The goals of the database are to facilitate improved policy analysis, modeling, visualization, and communication by states, industry, utilities, academia, federal agencies, and other stakeholders.</p>
+				<p>This draft database is a &ldquo;beta&rdquo; version and a work-in-progress. To submit feedback, please send an email to <a href="mailto:EPSA.database@hq.doe.gov" target="_blank">EPSA.database@hq.doe.gov</a>.</p>
+				<p>All data were gathered from public sources. Links and contact information are provided for users requiring further information.&nbsp;Users are encouraged to refer to these links for original source materials with additional details.</p>
+				<p><em>Disclaimer:</em>&nbsp;<em>This work was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, nor any of their contractors, subcontractors or their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or any third party&rsquo;s use or the results of such use of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights. Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise, does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof or its contractors or subcontractors. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof, its contractors or subcontractors.</em></p>
 			</div>
 		</div>
 	</div>
 	
-	<div class="modal" id="Resources">
+	<div class="modal" id="Resources" data-popup="popup-3">
 		<div class="modal-content pageWrap">
-			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+			<div class="contentWrap pageContent">
 				<h2>DOE Resources</h2>
 				<h3>The Energy-Water Nexus</h3>
 				<p>Energy and water systems are interconnected. Energy is required to extract, treat, and deliver water. On the other hand, water is used in multiple phases of energy production and electricity generation, from hydraulic fracturing and irrigating crops for biofuels to providing cooling water for thermoelectric power plants. Despite their interdependency, energy and water systems have been developed, managed, and regulated independently. The complexity at the energy-water nexus demands a coordinated and integrated DOE approach.</p>
@@ -580,375 +546,34 @@ $(window).bind("load", function() {
 		</div>
 	</div>
 	
-	<div class="modal" id="Contact">
+	<div class="modal" id="Contact" data-popup="popup-4">
 		<div class="modal-content pageWrap">
-			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
+			<div class="contentWrap pageContent">
 				<h2>Contact</h2>
-				<p>To submit comments, feedback, or ideas related to the draft database, please respond as indicated in the <a target="_blank" href="https://www.federalregister.gov/documents/2017/06/05/2017-11547/requests-for-information-review-of-draft-version-of-energy-water-nexus-state-policy-database">Request for Information</a> to 
-			 	 <a href="mailto:EPSA.database@hq.doe.gov" target="_blank">EPSA.database@hq.doe.gov</a>.</p>
+				<p>To submit comments, feedback, or ideas related to the draft database, please send an email to <a href="mailto:EPSA.database@hq.doe.gov" target="_blank">EPSA.database@hq.doe.gov</a>.</p>
 				
 			</div>
 		</div>
 	</div>
 	
-	<div class="modal" id="Maps">
+	<div class="modal" id="Maps" data-popup="popup-5">
 		<div class="modal-content pageWrap">
-			<div class="contentWrap pageContent"><a class="close" href="#">close</a>
-					
-					<h2>Maps</h2>
-					
-				
+			<div class="contentWrap pageContent">					
+				<h2>Maps</h2>
 				<div id="tabs">
-					<!--
-					<ul>
-						<li><a href="#tabs-1">Surface Water Rights</a></li>
-						<li><a href="#tabs-2">Ground Water Rights</a></li>
-						<li><a href="#tabs-3">Class I Hazardous Waste UIC</a></li>
-						<li><a href="#tabs-4">Class I Non-Hazardous Waste UIC</a></li>
-						<li><a href="#tabs-5">Class II UIC</a></li>
-					</ul>
-					-->
 					<div id="tabs-1">
 						<h3>Surface Water Rights</h3>
-							<img style="display:block;text-align:center;margin:auto;width:600px;height:auto;" src="images/swr-legend.png" alt="legend showing color codes for Permit/Reporting-Threshold (gpd)">
-						<div class="mapWrap">	
-							<p style="text-align:center;">Click on a state...</p>
-							<div id="surfacewatermap"></div>				
-							<table id="surfacewaterrightstable" cellspacing="0" cellpadding="0" width="69%">
-							<col width="25%">
-							<col width="25%">
-							<col width="25%">
-							<col width="25%">
-							<thead>
-							<tr>
-								<th>Name </th>
-								<th>State</th>
-								<th>Water-rights-doctrine</th>
-								<th>Permit/Reporting-Threshold (gpd)</th>
-							</tr>
-							</thead>
-							<tfoot>							
-							<tr>
-								<th></th>
-								<th></th>
-								<th></th>
-								<th></th>
-							</tr>
-							</tfoot>
-							<tbody>
-							<tr>
-								<td><a href="#modal-19" onclick="myPillFilter('Alabama')">Surface Water Rights (Alabama)</a></td>
-								<td>Alabama</td>
-								<td>Riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-38" onclick="myPillFilter('Alaska')">Surface Water Rights (Alaska)</a></td>
-								<td>Alaska</td>
-								<td>Prior appropriation</td>
-								<td>500</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-64" onclick="myPillFilter('Arizona')">Surface Water Rights (Arizona)</a></td>
-								<td>Arizona</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-81" onclick="myPillFilter('Arkansas')">Surface Water Rights (Arkansas)</a></td>
-								<td>Arkansas</td>
-								<td>Regulated riparian</td>
-								<td>893</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-114" onclick="myPillFilter('California')">Surface Water Rights (California)</a></td>
-								<td>California</td>
-								<td>Multiple</td>
-								<td>8930</td>
-							</tr>
-							<tr>
-								<td> <a href="#modal-151" onclick="myPillFilter('Colorado')">Surface Water Rights (Colorado)</a></td>
-								<td>Colorado</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-181" onclick="myPillFilter('Connecticut')">Surface Water Rights (Connecticut)</a></td>
-								<td>Connecticut</td>
-								<td>Regulated riparian</td>
-								<td>50,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-197" onclick="myPillFilter('Delaware')">Surface Water Rights (Delaware)</a></td>
-								<td>Delaware</td>
-								<td>Regulated riparian</td>
-								<td>50,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-219" onclick="myPillFilter('Florida')">Surface Water Rights (Florida)</a></td>
-								<td>Florida</td>
-								<td>Regulated riparian</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-237" onclick="myPillFilter('Georgia')">Surface Water Rights (Georgia)</a></td>
-								<td>Georgia</td>
-								<td>Regulated riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-253" onclick="myPillFilter('Hawaii')">Surface Water Rights (Hawaii)</a></td>
-								<td>Hawaii</td>
-								<td>Riparian</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-269" onclick="myPillFilter('Idaho')">Surface Water Rights (Idaho)</a></td>
-								<td>Idaho</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-297" onclick="myPillFilter('Illinois')">Surface Water Rights (Illinois)</a></td>
-								<td>Illinois</td>
-								<td>Regulated riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-324" onclick="myPillFilter('Indiana')">Surface Water Rights (Indiana)</a></td>
-								<td>Indiana</td>
-								<td>Riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-349" onclick="myPillFilter('Iowa')">Surface Water Rights (Iowa)</a></td>
-								<td>Iowa</td>
-								<td>Modified riparian</td>
-								<td>25,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-369" onclick="myPillFilter('Kansas')">Surface Water Rights (Kansas)</a></td>
-								<td>Kansas</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-385" onclick="myPillFilter('Kentucky')">Surface Water Rights (Kentucky)</a></td>
-								<td>Kentucky</td>
-								<td>Riparian</td>
-								<td>10,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-399" onclick="myPillFilter('Louisiana')">Surface Water Rights (Louisiana)</a></td>
-								<td>Louisiana</td>
-								<td>Riparian</td>
-								<td>no limit</td>
-							</tr>
-							<tr>
-								<td> <a href="#modal-417" onclick="myPillFilter('Maine')">Surface Water Rights (Maine)</a></td>
-								<td>Maine</td>
-								<td>Riparian</td>
-								<td>20,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-433" onclick="myPillFilter('Maryland')">Surface Water Rights (Maryland)</a></td>
-								<td>Maryland</td>
-								<td>Riparian</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-451" onclick="myPillFilter('Massachusetts')">Surface Water Rights (Massachusetts)</a></td>
-								<td>Massachusetts</td>
-								<td>Regulated riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-480" onclick="myPillFilter('Michigan')">Surface Water Rights (Michigan)</a></td>
-								<td>Michigan</td>
-								<td>Regulated riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-515" onclick="myPillFilter('Minnesota')">Surface Water Rights (Minnesota)</a></td>
-								<td>Minnesota</td>
-								<td>Riparian</td>
-								<td>10,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-535" onclick="myPillFilter('Mississippi')">Surface Water Rights (Mississippi)</a></td>
-								<td>Mississippi</td>
-								<td>Regulated riparian</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-553" onclick="myPillFilter('Missouri')">Surface Water Rights (Missouri)</a></td>
-								<td>Missouri</td>
-								<td>Riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-582" onclick="myPillFilter('Montana')">Surface Water Rights (Montana)</a></td>
-								<td>Montana</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-640" onclick="myPillFilter('Nebraska')">Surface Water Rights (Nebraska)</a></td>
-								<td>Nebraska</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-661" onclick="myPillFilter('Nevada')">Surface Water Rights (Nevada)</a></td>
-								<td>Nevada</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1140" onclick="myPillFilter('New Hampshire')">Surface Water Rights (New Hampshire)</a></td>
-								<td>New Hampshire</td>
-								<td>Riparian</td>
-								<td>20,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1152" onclick="myPillFilter('New Jersey')">Surface Water Rights (New Jersey)</a></td>
-								<td>New Jersey</td>
-								<td>Riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1175" onclick="myPillFilter('New Mexico')">Surface Water Rights (New Mexico)</a></td>
-								<td>New Mexico</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1246" onclick="myPillFilter('New York')">Surface Water Rights (New York)</a></td>
-								<td>New York</td>
-								<td>Riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1278" onclick="myPillFilter('North Carolina')">Surface Water Rights (North Carolina)</a></td>
-								<td>North Carolina</td>
-								<td>Riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1298" onclick="myPillFilter('North Dakota')">Surface Water Rights (North Dakota)</a></td>
-								<td>North Dakota</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1312" onclick="myPillFilter('Ohio')">Surface Water Rights (Ohio)</a></td>
-								<td>Ohio</td>
-								<td>Riparian</td>
-								<td>2,000,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1351" onclick="myPillFilter('Oklahoma')">Surface Water Rights (Oklahoma)</a></td>
-								<td>Oklahoma</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1369" onclick="myPillFilter('Oregon')">Surface Water Rights (Oregon)</a></td>
-								<td>Oregon</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1402" onclick="myPillFilter('Pennsylvania')">Surface Water Rights (Pennsylvania)</a></td>
-								<td>Pennsylvania</td>
-								<td>Riparian</td>
-								<td>no limit</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1421" onclick="myPillFilter('Rhode Island')">Surface Water Rights (Rhode Island)</a></td>
-								<td>Rhode Island</td>
-								<td>Riparian</td>
-								<td>no limit</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1437" onclick="myPillFilter('South Carolina')">Surface Water Rights (South Carolina)</a></td>
-								<td>South Carolina</td>
-								<td>Regulated riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1469" onclick="myPillFilter('South Dakota')">Surface Water Rights (South Dakota)</a></td>
-								<td>South Dakota </td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1482" onclick="myPillFilter('Tennessee')">Surface Water Rights (Tennessee)</a></td>
-								<td>Tennessee</td>
-								<td>Riparian</td>
-								<td>10,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1505" onclick="myPillFilter('Texas')">Surface Water Rights (Texas)</a></td>
-								<td>Texas</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1521" onclick="myPillFilter('Utah')">Surface Water Rights (Utah)</a></td>
-								<td>Utah</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1547" onclick="myPillFilter('Vermont')">Surface Water Rights (Vermont)</a></td>
-								<td>Vermont</td>
-								<td>Riparian</td>
-								<td>no limit</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1561" onclick="myPillFilter('Virginia')">Surface Water Rights (Virginia)</a></td>
-								<td>Virginia</td>
-								<td>Regulated riparian</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1582" onclick="myPillFilter('Washington')">Surface Water Rights (Washington)</a></td>
-								<td>Washington</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1635" onclick="myPillFilter('West Virginia')">Surface Water Rights (West Virginia)</a></td>
-								<td>West Virginia</td>
-								<td>Riparian</td>
-								<td>no limit</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1652" onclick="myPillFilter('Wisconsin')">Surface Water Rights (Wisconsin)</a></td>
-								<td>Wisconsin</td>
-								<td>Regulated riparian</td>
-								<td>100,000</td>
-							</tr>
-							<tr>
-								<td><a href="#modal-1717" onclick="myPillFilter('Wyoming')">Surface Water Rights (Wyoming)</a></td>
-								<td>Wyoming</td>
-								<td>Prior appropriation</td>
-								<td>0</td>
-							</tr>
-							</tbody>
-						</table>
-						<div class="mapCaption">
-<p>Reporting thresholds for surface water use permits vary by state. The map shows the reporting threshold required by policies in each state in gallons per day (GPD). Many western states (where water resources are limited) have a threshold of 0, meaning that any surface water use must be reported. Many eastern states, where water is more abundant, have higher limits or no limits on what must be reported.</p>
-</div>
-
+							<img style="display:block;text-align:center;margin:auto;width:436px;height:auto;" src="images/sw-legend.png" alt="legend showing color codes for Water-rights-doctrine">
+						<div class="mapWrap">								
+							<div id="surfacewatermap"></div>							
+							<div class="mapCaption"><p>Reporting thresholds for surface water use permits vary by state. The map shows the reporting threshold required by policies in each state in gallons per day (GPD). Many western states (where water resources are limited) have a threshold of 0, meaning that any surface water use must be reported. Many eastern states, where water is more abundant, have higher limits or no limits on what must be reported.</p></div>
 						</div><!-- /.mapWrap -->
 					</div><!-- /#tab-1 -->
 					<div id="tabs-2">
 						<h3>Groundwater Rights</h3>
 						<img style="display:block;text-align:center;margin:auto;" src="images/gw-legend.png" alt="Groundwater color code for map">
 						<div class="mapWrap">
-							<div id="groundwatermap"></div>
+							<div id="groundwatermap"></div>														
 							<div class="mapCaption">
 								<p>Groundwater rights doctrines vary significantly by state. The prior appropriation doctrine is more common in western states where water resources are limited, while reasonable use and beneficial purpose doctrines are more common in the East where water is more abundant.</p>
 							</div>
@@ -996,13 +621,26 @@ $(window).bind("load", function() {
 </div>
 <!-- /.globalWrapper -->
 <script>
-	$(document).ready(function(){
-		//$( "#tabs" ).tabs();
-		/*
-		$(".jqvmap-region").click(function() {
-		  $( "#surfacewaterrightstable" ).show();
+$.ajax({
+	url: 'json/statesummaries.9.15.17.v2.json',
+	dataType: 'json',
+	type: 'get',
+	cache: false,
+	success: function(data){
+		//console.log(data);
+		var stateSumData = '';
+		$(data.statesummaries).each(function(index, value){		
+			//console.log(value.State);
+			stateSumData += '<div class="stateSummaryList" id="state-' + value.ID + '">' + '<h2 class="ssheading">State Summary: ' + value.State + '</h2><div class="summary">' + value.Summary + '</div></div>';			
 		});
-		*/
+		
+		$("#stateSummary").append(stateSumData);
+	}
+});
+</script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script>
+	$(document).ready(function(){
 		
 		jQuery('#surfacewatermap').vectorMap({		
 			map: 'usa_en',
@@ -1010,61 +648,61 @@ $(window).bind("load", function() {
 			color: '#D1E7F1',
 			enableZoom: true,
 			showTooltip: true,
-			showLabels: true,
+			//showLabels: true,
 			selectedColor: null,
 			borderColor: '#ffffff',
 			hoverColor: null,
 			colors: {
-			al:'#416373',
-			ak:'#D1E7F1',
-			az:'#E9F2F8',
-			ar:'#D1E7F1',
-			ca:'#A1BBC7',
-			co:'#E9F2F8',
-			ct:'#628290',
-			de:'#628290',
-			fl:'#E9F2F8',
-			ga:'#416373',
-			hi:'#E9F2F8',
-			id:'#E9F2F8',
-			il:'#416373',
-			in:'#416373',
-			ia:'#829FAC',
-			ks:'#E9F2F8',
-			ky:'#829FAC',
-			la:'#FFB164',
-			ma:'#829FAC',
-			md:'#E9F2F8',
-			me:'#416373',
-			mi:'#416373',
-			mn:'#829FAC',
-			ms:'#E9F2F8',
-			mo:'#416373',
-			mt:'#E9F2F8',
-			ne:'#E9F2F8',
-			nv:'#E9F2F8',
-			nh:'#829FAC',
-			nj:'#416373',
-			nm:'#E9F2F8',
-			ny:'#416373',
-			nc:'#416373',
-			nd:'#E9F2F8',
-			oh:'#173D4F',
-			ok:'#E9F2F8',
-			or:'#E9F2F8',
-			pa:'#FFB164',
-			ri:'#FFB164',
-			sc:'#416373',
-			sd:'#E9F2F8',
-			tn:'#829FAC',
-			tx:'#E9F2F8',
-			ut:'#E9F2F8',
-			vt:'#FFB164',
-			va:'#E9F2F8',
-			wa:'#E9F2F8',
-			wv:'#FFB164',
-			wi:'#416373',
-			wy:'#E9F2F8'
+			al:'#37454E',
+			ak:'#8C4845',
+			az:'#8C4845',
+			ar:'#F2CA4E',
+			ca:'#D95141',
+			co:'#8C4845',
+			ct:'#F2CA4E',
+			de:'#F2CA4E',
+			fl:'#F2CA4E',
+			ga:'#F2CA4E',
+			hi:'#37454E',
+			id:'#8C4845',
+			il:'#F2CA4E',
+			in:'#37454E',
+			ia:'#3BA48A',
+			ks:'#8C4845',
+			ky:'#37454E',
+			la:'#37454E',
+			ma:'#37454E',
+			md:'#37454E',
+			me:'#F2CA4E',
+			mi:'#F2CA4E',
+			mn:'#37454E',
+			ms:'#F2CA4E',
+			mo:'#37454E',
+			mt:'#8C4845',
+			ne:'#8C4845',
+			nv:'#8C4845',
+			nh:'#37454E',
+			nj:'#37454E',
+			nm:'#8C4845',
+			ny:'#37454E',
+			nc:'#37454E',
+			nd:'#8C4845',
+			oh:'#37454E',
+			ok:'#8C4845',
+			or:'#8C4845',
+			pa:'#37454E',
+			ri:'#37454E',
+			sc:'#F2CA4E',
+			sd:'#8C4845',
+			tn:'#37454E',
+			tx:'#8C4845',
+			ut:'#8C4845',
+			vt:'#37454E',
+			va:'#F2CA4E',
+			wa:'#8C4845',
+			wv:'#37454E',
+			wi:'#F2CA4E',
+			wy:'#8C4845'
 			},
 			onLabelShow: function(event, label, code)
 		{
@@ -1146,11 +784,14 @@ $(window).bind("load", function() {
 				//label.text([code].name);
 				label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 0</div>');
 			}
-		},
+		}/*,
 			onRegionClick: function (event, code, region) {
 			switch (code) {
-				case "ak":myPillFilterSWT('Alaska');break;
-				case "al":myPillFilterSWT('Alabama');break;
+				case "ak":myPillFilterSWT('Alaska');				
+				 //$("#surfacewatermapWRD").append('<div class="module_holder">Prior appropriation</div>');				
+				break;
+				case "al":myPillFilterSWT('Alabama');
+				break;
 				case "ar":myPillFilterSWT('Arkansas');break;
 				case "az":myPillFilterSWT('Arizona');break;
 				case "ca":myPillFilterSWT('California');break;
@@ -1202,26 +843,9 @@ $(window).bind("load", function() {
 				case "wy":myPillFilterSWT('Wyoming');break;
 				}
 			}
+			*/
 				
 		});
-		
-		var surfaceWaterTable;
-	
-		function myPillFilterSWT(data) {
-		 yadcf.exFilterColumn(surfaceWaterTable, [[1, data]]);
-		}
-		
-		surfaceWaterTable = $('#surfacewaterrightstable').DataTable({
-			"dom":'t',
-			iDisplayLength:1
-		});
-		
-		yadcf.init(surfaceWaterTable, [
-			{ column_number: 0}, 
-			{ column_number: 1}, 
-			{ column_number: 2}, 
-			{ column_number: 3}
-			]);
 		
 		jQuery('#groundwatermap').vectorMap({		
 			map: 'usa_en',
@@ -1229,7 +853,7 @@ $(window).bind("load", function() {
 			color: '#D1E7F1',
 			enableZoom: true,
 			showTooltip: true,
-			showLabels: true,
+			//showLabels: true,
 			selectedColor: null,
 			borderColor: '#ffffff',
 			hoverColor: null,
@@ -1290,6 +914,91 @@ $(window).bind("load", function() {
 				case "wy":window.location = "#modal-1716";break;
 				}
 			}*/
+			,onLabelShow: function(event, label, code)
+				{
+					if (
+						code == 'ri' ||				
+						code == 'wv'
+						)
+					{
+						//label.text([code].name);
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): No Limit</div>');
+					}
+					else if (			
+						code=='oh'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 2,000,000</div>');
+						}
+					else if (			
+						code=='al' ||
+						code=='ga' ||
+						code=='il' ||				
+						code=='in' ||
+						code=='ma' ||
+						code=='mi' ||
+						code=='mo' ||
+						code=='nj' ||
+						code=='ny' ||
+						code=='nc' ||
+						code=='sc' ||
+						code=='wi'				
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 100,000</div>');
+						}
+					else if (
+						code=='az'||
+						code=='ar'||
+						code=='ct'||
+						code=='de'||
+						code=='la'||
+						code=='mt'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 50,000</div>');
+						}
+					else if (
+						code=='ia'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 25,000</div>');
+						}
+					else if (
+						code=='me'||
+						code=='nh'||
+						code=='vt'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 20,000</div>');
+						}
+					else if (
+						code=='ky'||
+						code=='mn'||
+						code=='pa'||
+						code=='tn'||
+						code=='va'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 10,000</div>');
+						}
+					else if (
+						code=='ca'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 8930</div>');
+						}
+					else if (
+						code=='md'||
+						code=='wa'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 5000</div>');
+						}
+					else if (
+						code=='ak'
+						) {
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 500</div>');
+						}			
+					 else {
+						//event.preventDefault();
+						//label.html('European Union, including ' + label.text());
+						//label.text([code].name);
+						label.html('<h3>' + label.text() + '</h3>' + '<div>Permit/Reporting-Threshold (gpd): 0</div>');
+					}
+				}
 		});
 		
 		jQuery('#uicHaz').vectorMap({		
@@ -1298,7 +1007,7 @@ $(window).bind("load", function() {
 			color: '#D1E7F1',
 			enableZoom: true,
 			showTooltip: true,
-			showLabels: true,
+			//showLabels: true,
 			selectedColor: null,
 			borderColor: '#ffffff',
 			hoverColor: null,
@@ -1368,7 +1077,7 @@ $(window).bind("load", function() {
 			color: '#D1E7F1',
 			enableZoom: true,
 			showTooltip: true,
-			showLabels: true,
+			//showLabels: true,
 			selectedColor: null,
 			borderColor: '#ffffff',
 			hoverColor: null,
@@ -1439,7 +1148,7 @@ $(window).bind("load", function() {
 			color: '#D1E7F1',
 			enableZoom: true,
 			showTooltip: true,
-			showLabels: true,
+			//showLabels: true,
 			selectedColor: null,
 			borderColor: '#ffffff',
 			hoverColor: null,
@@ -1503,10 +1212,290 @@ $(window).bind("load", function() {
 			}
 			*/
 		});
+		
+		var stateCodePositions = 
+		  {
+		  "HI": {
+			"x": 326.5909,
+			"y": 571.809504
+		  },
+		  "AK": {
+			"x": 108.056376,
+			"y": 508.661812
+		  },
+		  "FL": {
+			"x": 754.9306750122784,
+			"y": 496.13892259990513
+		  },
+		  "NH": {
+			"x": 858.273048,
+			"y": 132.090582
+		  },
+		  "MI": {
+			"x": 651,
+			"y": 184
+		  },
+		  "VT": {
+			"x": 837.919636,
+			"y": 124.99134828031387
+		  },
+		  "ME": {
+			"x": 889.7453136698773,
+			"y": 92.12132730418989
+		  },
+		  "RI": {
+			"x": 876.450606370494,
+			"y": 183.125196
+		  },
+		  "NY": {
+			"x": 812.8376976678503,
+			"y": 164.97002027104708
+		  },
+		  "PA": {
+			"x": 782.6000970915588,
+			"y": 208.7773102734416
+		  },
+		  "NJ": {
+			"x": 836.6955141585858,
+			"y": 214.69531214627045
+		  },
+		  "DE": {
+			"x": 825.250017,
+			"y": 251.907664
+		  },
+		  "MD": {
+			"x": 798.824402,
+			"y": 242.967393
+		  },
+		  "VA": {
+			"x": 775.1021509847131,
+			"y": 286.555516091326
+		  },
+		  "WV": {
+			"x": 750.3190393092434,
+			"y": 259.4085551904374
+		  },
+		  "OH": {
+			"x": 703.7917685103017,
+			"y": 234.96076975757396
+		  },
+		  "IN": {
+			"x": 643.6855270960854,
+			"y": 254.15542346885726
+		  },
+		  "IL": {
+			"x": 595.3083465167095,
+			"y": 254.00008046282022
+		  },
+		  "CT": {
+			"x": 854.324255,
+			"y": 176.17366653258463
+		  },
+		  "WI": {
+			"x": 566.329534216415,
+			"y": 157.3713814815865
+		  },
+		  "NC": {
+			"x": 773.8200358812254,
+			"y": 329.488481876757
+		  },/*
+		  "DC": {
+			"x": 805.2075000000001,
+			"y": 248.575
+		  },*/
+		  "MA": {
+			"x": 863.870417,
+			"y": 159.58860893333966
+		  },
+		  "TN": {
+			"x": 658.753850678048,
+			"y": 337.5023176125468
+		  },
+		  "AR": {
+			"x": 539.5927335903888,
+			"y": 371.0432323404463
+		  },
+		  "MO": {
+			"x": 534.2280207156356,
+			"y": 298.2507717934896
+		  },
+		  "GA": {
+			"x": 716.7694135441192,
+			"y": 402.0317482537276
+		  },
+		  "SC": {
+			"x": 757.2122532921011,
+			"y": 368.7438689420568
+		  },
+		  "KY": {
+			"x": 662.3357461369104,
+			"y": 303.1047097429061
+		  },
+		  "AL": {
+			"x": 653.8716570194158,
+			"y": 410.31362987047174
+		  },
+		  "LA": {
+			"x": 542.1065032642587,
+			"y": 454.07491711069906
+		  },
+		  "MS": {
+			"x": 593.033562502455,
+			"y": 415.64911787111754
+		  },
+		  "IA": {
+			"x": 524.7178736562029,
+			"y": 211.8512462972334
+		  },
+		  "MN": {
+			"x": 515.6488439798509,
+			"y": 117.8417070725155
+		  },
+		  "OK": {
+			"x": 445.62066675369624,
+			"y": 351.0785885587988
+		  },
+		  "TX": {
+			"x": 407.84000000000003,
+			"y": 436.49
+		  },
+		  "NM": {
+			"x": 301.09569989543616,
+			"y": 372.2718610378876
+		  },
+		  "KS": {
+			"x": 443.76842889161657,
+			"y": 291.3220488920981
+		  },
+		  "NE": {
+			"x": 420.95076790265824,
+			"y": 224.7863675044761
+		  },
+		  "SD": {
+			"x": 419.9715443215115,
+			"y": 161.03509523317177
+		  },
+		  "ND": {
+			"x": 418.18941888386246,
+			"y": 94.97928757916497
+		  },
+		  "WY": {
+			"x": 301.21533637622565,
+			"y": 181.2419355996737
+		  },
+		  "MT": {
+			"x": 279.11041853595583,
+			"y": 89.92494873289988
+		  },
+		  "CO": {
+			"x": 323.7781705390495,
+			"y": 272.3908477224708
+		  },
+		  "ID": {
+			"x": 185.8607022809183,
+			"y": 144.75558080203172
+		  },
+		  "UT": {
+			"x": 224.1640265201877,
+			"y": 250.5282904836319
+		  },
+		  "AZ": {
+			"x": 204.2375537530424,
+			"y": 360.2158498738335
+		  },
+		  "NV": {
+			"x": 143.6346202549392,
+			"y": 242.1119294845405
+		  },
+		  "OR": {
+			"x": 93,
+			"y": 127
+		  },
+		  "WA": {
+			"x": 114.67910061353884,
+			"y": 54.6995505992775
+		  },
+		  "CA": {
+			"x": 69.9954332080572,
+			"y": 277.7076074638756
+		  }
+		};
 	
-	});
-	
+		var mapg= document.querySelector("#surfacewatermap g");
+		var mapg2= document.querySelector("#groundwatermap g");
+		var mapg3= document.querySelector("#uicHaz g");
+		var mapg4= document.querySelector("#uicNonHaz g");
+		var mapg5= document.querySelector("#uicClass2 g");
+		
+		  for (var i in stateCodePositions) {
+
+			var textNode = document.createElementNS("http://www.w3.org/2000/svg", "text");
+
+			textNode.setAttribute("x", stateCodePositions[i].x);
+			textNode.setAttribute("y", stateCodePositions[i].y);
+			//textNode.setAttribute("style", "fill:#fff;stroke:#fff;border:solid 1px #fff;padding:2px 5px");
+			textNode.setAttribute("class", "abbr");
+			textNode.textContent = i;
+			mapg.appendChild(textNode);
+		  }
+		  for (var i in stateCodePositions) {
+
+			var textNode = document.createElementNS("http://www.w3.org/2000/svg", "text");
+
+			textNode.setAttribute("x", stateCodePositions[i].x);
+			textNode.setAttribute("y", stateCodePositions[i].y);			
+			textNode.setAttribute("class", "abbr");
+			textNode.textContent = i;
+			mapg2.appendChild(textNode);
+		  }
+		  for (var i in stateCodePositions) {
+
+			var textNode = document.createElementNS("http://www.w3.org/2000/svg", "text");
+
+			textNode.setAttribute("x", stateCodePositions[i].x);
+			textNode.setAttribute("y", stateCodePositions[i].y);			
+			textNode.setAttribute("class", "abbr");
+			textNode.textContent = i;
+			mapg3.appendChild(textNode);
+		  }
+		  for (var i in stateCodePositions) {
+
+			var textNode = document.createElementNS("http://www.w3.org/2000/svg", "text");
+
+			textNode.setAttribute("x", stateCodePositions[i].x);
+			textNode.setAttribute("y", stateCodePositions[i].y);			
+			textNode.setAttribute("class", "abbr");
+			textNode.textContent = i;
+			mapg4.appendChild(textNode);
+		  }
+		  for (var i in stateCodePositions) {
+
+			var textNode = document.createElementNS("http://www.w3.org/2000/svg", "text");
+
+			textNode.setAttribute("x", stateCodePositions[i].x);
+			textNode.setAttribute("y", stateCodePositions[i].y);			
+			textNode.setAttribute("class", "abbr");
+			textNode.textContent = i;
+			mapg5.appendChild(textNode);
+		  }
+		
+		$(".showModal").fancybox();
+		
+		//$(myImge).load(function() {
+		//	alert("will alert even in IE")
+		//});
+
+	});	
 </script>
+<script type="text/javascript">
+$(window).bind("load", function() {
+
+	$('#stateSummary').linkify({
+			target: "_blank"
+		});
+});
+
+</script>	
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -74,6 +74,7 @@ var oTable;
 
 function myPillFilter(data) {
 	 yadcf.exFilterColumn(oTable, [[1, data]]);
+	 $("#placeholder").css("display", "none");
 	}
 	
 function loadDataTable() {	
@@ -108,7 +109,7 @@ function loadDataTable() {
 			{width:280, targets: 5}			
 
 		],
-		order:[[1, "desc"]],
+		order:[[1, "asc"]],
 		oLanguage: {
             "sLengthMenu": "_MENU_ records per page"
         },
@@ -212,6 +213,7 @@ yadcf.init(oTable,
 			column_number: 4, 
 			filter_type: "multi_select",
 			select_type: "select2",
+			style_class: "appwater",
 			select_type_options: {
             width: '140px'}
 		},
@@ -255,8 +257,54 @@ function loadToDOM(tabletop_data, tabletop) {
 		$(template_html).append(handlebarscompile( tabletop.sheets(sheet) ));
 	// Close each statement
     }, this);
+	
+	function nWin() {
+	  var urlhash = $(this).data('anchor');	  
+	  var url = "index.html#";
+	  var urllocation = url + urlhash;
+	  var wi = window.open(urllocation, '_blank', '');		
+	  var html = $(this).next().html();
+	  wi.document.write('<html><head><title>Database of State Water Policies Affecting Energy</title><link href="fonts/fonts.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="css/custom.css"></head><body class="newtab">');		
+	  $(wi.document.body).html(html);
+	  wi.document.write('</body></html>');
+	  wi.document.close();
+	  setTimeout(function() {            
+            wi.document.close();
+        }, 10);
+	}
+
+	
+			
+	$(function() {
+		$( "[data-anchor]" ).click(nWin);
+	});
+
 
     loadDataTable();
+	/*
+	function nWinload() {
+	  //var urlhash = $(this).attr('href');   
+	  var hash = window.location.hash.substr(1);	  
+	  //alert(hash);
+	  var winload = window.open('index.html#' + hash);		
+	  var html = $(hash).html();
+	  winload.document.write('<html><head><title>Database of State Water Policies Affecting Energy</title><link rel="stylesheet" type="text/css" href="css/custom.css"></head><body class="newtab">');		
+	  $(winload.document.body).html(html);
+	  winload.document.write('</body></html>');
+	  
+	  
+	}
+	
+	//function theCode() { code; }
+
+	if(location.hash){
+		nWinload();	
+	}	
+	$(window).on("hashchange", function(){
+		nWinload();
+	});
+	*/
+	
 }
 
 

@@ -10,26 +10,32 @@
 -ms-transform: opacity 0.5s ease;
 transform: opacity 0.5s ease;
 }
+body.pace-running {background-image:none !important;}
 
-body.pace-running .globalWrapper {
+body.pace-running .globalWrapper,
+body.pace-running #masthead {
     opacity: 0;
 }
-body.pace-done .globalWrapper {
-    opacity: 1;
+body.pace-done .globalWrapper, 
+body.pace-done #masthead, 
+body.pace-done footer {
+    opacity: 1 !important;
 }
 
 body.pace-running #wait {
     opacity: 1;
 	display:block;
 	position:absolute;
-	left:0;top:20px;right:0;margin:auto;width:75%;height:600px;font-size:36px;z-index: 9999;text-align:center;text-shadow:1px 1px 1px #fff;
+	left:0;top:20px;right:0;margin:auto;width:75%;height:600px;font-size:36px;z-index: 9999;text-align:center;text-shadow:1px 1px 1px #000;
+	color:#fff;
 }
 body.pace-done #wait {
     opacity: 0;
 	display:none;
 }
-
-
+body.pace-done {
+background: url(../images/site-bg.jpg) no-repeat fixed 0 0 / cover;
+}
 
 .pace {
   -webkit-pointer-events: none;
