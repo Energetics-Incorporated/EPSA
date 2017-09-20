@@ -478,9 +478,10 @@ th.sorting:hover, th.sorting_desc:hover {
 
 .mapCaption p {font-size:11px;}
 
-.newtab {background-image:none;background-color:#fff;}
+.newtab {background-image:none;background-color:#fff;padding:0;}
 .newtab .close {display:none;}
 .newtab p {margin:0;}
+.newtab .contentWrap {padding:0 30px;position:static;left:auto;right:auto;top:auto;bottom:auto;}
 
 .stateSummaryList {display:none;white-space:pre-line;width:94%;}
 .displayBlock {display:block;}
