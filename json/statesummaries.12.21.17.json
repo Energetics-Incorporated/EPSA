@@ -1,0 +1,254 @@
+{
+"statesummaries": [
+ {
+   "ID": 1,
+   "State": "Alabama",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nAlabama Department of Environmental Management\nhttp://www.adem.state.al.us/\n\nState Oil and Gas Board of Alabama\nhttp://www2.ogb.state.al.us/ogb/ogb.html"
+ },
+ {
+   "ID": 2,
+   "State": "Alaska",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 500\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 500\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nAlaska Department of Environmental Conservation\nhttp://dec.alaska.gov/\n\nAlaska Oil and Gas Conservation Commission \nhttp://doa.alaska.gov/ogc/\n\nAlaska Department of Natural Resources\nhttp://dnr.alaska.gov/\n"
+ },
+ {
+   "ID": 3,
+   "State": "Arizona",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nArizona Department of Water Resources \nhttp://www.azwater.gov/azdwr/\n\nArizona Department of Environmental Quality\nhttp://www.azdeq.gov/"
+ },
+ {
+   "ID": 4,
+   "State": "Arkansas",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 893\n\nGroundwater Rights Doctrine: Multiple\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nArkansas Department of Environmental Quality\nhttps://www.adeq.state.ar.us/\n\nArkansas Oil and Gas Commission\nhttp://www.aogc.state.ar.us\n\nArkansas Natural Resources Commission\nhttp://www.anrc.arkansas.gov/\n\n"
+ },
+ {
+   "ID": 5,
+   "State": "California",
+   "Summary": "Surface Water Rights Doctrine: Multiple\nSurface Water Rights Reporting/Permit Threshold (gpd): 8930\n\nGroundwater Rights Doctrine: Multiple\nGrundwater Rights Reporting/Permit Threshold (gpd): 8930\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nCalifornia Environmental Protection Agency State Water Resources Control Board\nhttps://www.waterboards.ca.gov/\n\nCalifornia Department of Conservation\nhttp://www.conservation.ca.gov/\n"
+ },
+ {
+   "ID": 6,
+   "State": "Colorado",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nColorado Oil and Gas Conservation Commission \nhttp://cogcc.state.co.us\n\nColorado Division of Water Resources\nhttp://water.state.co.us\n\nColorado Department of Public Health & Environment\nhttps://www.colorado.gov/cdphe\n"
+ },
+ {
+   "ID": 7,
+   "State": "Connecticut",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 50,000\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nConnecticut Department of Energy & Environmental Protection\nhttp://www.ct.gov/deep/\n"
+ },
+ {
+   "ID": 8,
+   "State": "Delaware",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 50,000\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: Banned\n\nKey Regulatory Agencies:\nDelaware Department of Natural Resources and Environmental Control\nhttp://www.dnrec.delaware.gov\n"
+ },
+ {
+   "ID": 9,
+   "State": "Florida",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: EPA\n\nKey Regulatory Agencies:\nFlorida Department of Environmental Protection\nhttp://www.dep.state.fl.us\n"
+ },
+ {
+   "ID": 10,
+   "State": "Georgia",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nGeorgia Department of Natural Resources\nhttp://gadnr.org/\n\n"
+ },
+ {
+   "ID": 11,
+   "State": "Hawaii",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nState of Hawaii Department of Land and Natural Resources \nhttp://dlnr.hawaii.gov/\n\nState of Hawaii Department of Health\nhttp://health.hawaii.gov/"
+ },
+ {
+   "ID": 12,
+   "State": "Idaho",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nIdaho Department of Water Resources\nhttps://www.idwr.idaho.gov/\n\nIdaho Department of Environmental Quality\nhttp://www.deq.idaho.gov/"
+ },
+ {
+   "ID": 13,
+   "State": "Illinois",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nIllinois Environmental Protection Agency\nhttp://www.epa.illinois.gov/\n\nIllinois Department of Natural Resources \nhttps://www.dnr.illinois.gov\n"
+ },
+ {
+   "ID": 14,
+   "State": "Indiana",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nIndiana Department of Natural Resources\nhttp://www.in.gov/dnr/\n\nIndiana Department of Environmental Management\nhttp://www.in.gov/idem/"
+ },
+ {
+   "ID": 15,
+   "State": "Iowa",
+   "Summary": "Surface Water Rights Doctrine: Modified riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 25,000\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 25,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nIowa Department of Natural Resources\nhttp://www.iowadnr.gov/"
+ },
+ {
+   "ID": 16,
+   "State": "Kansas",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nKansas Department of Health and Environment \nhttp://www.kdheks.gov/\n\nKansas Department of Agriculture\nhttp://agriculture.ks.gov/"
+ },
+ {
+   "ID": 17,
+   "State": "Kentucky",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 10,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 10,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nKentucky Department for Environmental Protection\nhttp://dep.ky.gov/"
+ },
+ {
+   "ID": 18,
+   "State": "Louisiana",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): No Limit\n\nGroundwater Rights Doctrine:  Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nLouisiana Department of Natural Resources \nhttp://www.dnr.louisiana.gov/\n\nLouisiana Department of Environmental Quality \nhttp://deq.louisiana.gov/"
+ },
+ {
+   "ID": 19,
+   "State": "Maine",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 20,000\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 20,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nMaine Department of Environmental Protection\nhttp://www.maine.gov/dep/"
+ },
+ {
+   "ID": 20,
+   "State": "Maryland",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 5,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nMaryland Department of the Environment\nhttp://mde.maryland.gov/"
+ },
+ {
+   "ID": 21,
+   "State": "Massachusetts",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nMassachusetts Department of Environmental Protection\nhttp://www.mass.gov/eea/agencies/massdep/"
+ },
+ {
+   "ID": 22,
+   "State": "Michigan",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Beneficial purpose\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nMichigan Department of Environmental Quality\nhttp://www.michigan.gov/deq/"
+ },
+ {
+   "ID": 23,
+   "State": "Minnesota",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 10,000\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 10,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nMinnesota Pollution Control Agency\nhttps://www.pca.state.mn.us/\n\nMinnesota Department of Natural Resources\nhttp://www.dnr.state.mn.us/"
+ },
+ {
+   "ID": 24,
+   "State": "Mississippi",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nMississippi Department of Environmental Quality\nhttps://www.deq.state.ms.us/\n\nMississippi State Oil and Gas Board\nhttp://www.ogb.state.ms.us/"
+ },
+ {
+   "ID": 25,
+   "State": "Missouri",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nMissouri Department of Natural Resources\nhttps://dnr.mo.gov/"
+ },
+ {
+   "ID": 26,
+   "State": "Montana",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 50,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nMontana Board of Oil and Gas Conservation \nhttp://bogc.dnrc.mt.gov/\n\nMontana Department of Natural Resources and Conservation\nhttp://dnrc.mt.gov/\n\nMontana Department of Environmental Quality\nhttp://deq.mt.gov/"
+ },
+ {
+   "ID": 27,
+   "State": "Nebraska",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nNebraska Department of Environmental Quality\nhttp://www.deq.state.ne.us/\n\nNebraska Oil and Gas Conservation Commission \nhttp://www.nogcc.ne.gov/\n\nNebraska Department of Natural Resources\nhttps://dnr.nebraska.gov/"
+ },
+ {
+   "ID": 28,
+   "State": "Nevada",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nNevada Division of Water Resources\nhttp://water.nv.gov/\n\nNevada Division of Environmental Protection\nhttps://ndep.nv.gov/"
+ },
+ {
+   "ID": 29,
+   "State": "New Hampshire",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 20,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 20,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nNew Hampshire Department of Environmental Services\nhttps://www.des.nh.gov/"
+ },
+ {
+   "ID": 30,
+   "State": "New Jersey",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nNew Jersey Department of Environmental Protection\nhttp://www.nj.gov/dep/"
+ },
+ {
+   "ID": 31,
+   "State": "New Mexico",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nNew Mexico Energy, Minerals and Natural Resources Department\nhttp://www.emnrd.state.nm.us/\n\nNew Mexico Environment Department\nhttps://www.env.nm.gov/\n\nNew Mexico State Engineer in the Division of Water Resources\nhttp://www.ose.state.nm.us/"
+ },
+ {
+   "ID": 32,
+   "State": "New York",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nNew York State Department of Environmental Conservation \nhttp://www.dec.ny.gov/"
+ },
+ {
+   "ID": 33,
+   "State": "North Carolina",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nNorth Carolina Department of Environmental Quality\nhttps://deq.nc.gov/"
+ },
+ {
+   "ID": 34,
+   "State": "North Dakota",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nNorth Dakota Department of Health\nhttps://www.ndhealth.gov/\n\nNorth Dakota Industrial Commission\nhttps://www.dmr.nd.gov/\n\nNorth Dakota State Water Commission\nhttp://www.swc.nd.gov/"
+ },
+ {
+   "ID": 35,
+   "State": "Ohio",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 2,000,000\n\nGroundwater Rights Doctrine: Beneficial purpose\nGrundwater Rights Reporting/Permit Threshold (gpd): 2,000,000\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nOhio Environmental Protection Agency \nhttp://www.epa.state.oh.us/\n\nOhio Department of Natural Resources\nhttp://ohiodnr.gov/"
+ },
+ {
+   "ID": 36,
+   "State": "Oklahoma",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nOklahoma Department of Environmental Quality\nhttp://www.deq.state.ok.us/\n\nOklahoma Corporation Commission\nhttps://www.occeweb.com/\n\nOklahoma Water Resources Board\nhttps://www.owrb.ok.gov/"
+ },
+ {
+   "ID": 37,
+   "State": "Oregon",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nOregon Department of Environmental Quality\nhttp://www.oregon.gov/deq/\n\nOregon Water Resources Department\nhttp://www.oregon.gov/owrd/"
+ },
+ {
+   "ID": 38,
+   "State": "Pennsylvania",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): No limit\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 10,000\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nPennsylvania Department of Environmental Protection \nhttp://www.dep.pa.gov"
+ },
+ {
+   "ID": 39,
+   "State": "Rhode Island",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): No limit\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): No  limit\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nRhode Island Department of Environmental Management\nhttp://www.dem.ri.gov/"
+ },
+ {
+   "ID": 40,
+   "State": "South Carolina",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nSouth Carolina Department of Health and Environmental Control\nhttp://www.scdhec.gov/\n\nSouth Carolina Department of Natural Resources\nhttp://www.dnr.sc.gov/"
+ },
+ {
+   "ID": 41,
+   "State": "South Dakota ",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: EPA\nClass I Non-hazardous: EPA\nClass II: State\n\nKey Regulatory Agencies:\nSouth Dakota Department of Environment and Natural Resources\nhttps://denr.sd.gov/"
+ },
+ {
+   "ID": 42,
+   "State": "Tennessee",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 10,000\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 10,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nTennessee Department of Environment & Conservation\nhttp://www.tennessee.gov/environment/"
+ },
+ {
+   "ID": 43,
+   "State": "Texas",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Absolute ownership\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nTexas Commission on Environmental Quality\nhttps://www.tceq.texas.gov/\n\nRail Road Commission of Texas \nhttp://www.rrc.state.tx.us/\n\nTexas Water Development Board\nhttp://www.twdb.texas.gov/"
+ },
+ {
+   "ID": 44,
+   "State": "Utah",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nUtah Department of Environmental Quality\nhttps://deq.utah.gov/\n\nUtah Department of Natural Resources\nhttps://naturalresources.utah.gov/"
+ },
+ {
+   "ID": 45,
+   "State": "Vermont",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): No limit\n\nGroundwater Rights Doctrine: Correlative rights\nGrundwater Rights Reporting/Permit Threshold (gpd): 20,000\n\nUndergound Injection Control Authority\nClass I Hazardous:  Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nVermont Department of Environmental Conservation\nhttp://dec.vermont.gov/"
+ },
+ {
+   "ID": 46,
+   "State": "Virginia",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): 10,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: EPA\nClass II: EPA\n\nKey Regulatory Agencies:\nVirginia Department of Environmental Quality\nhttp://www.deq.virginia.gov/\n\n"
+ },
+ {
+   "ID": 47,
+   "State": "Washington",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 5,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: State\n\nKey Regulatory Agencies:\nWashington Department of Ecology\nhttp://www.ecy.wa.gov/"
+ },
+ {
+   "ID": 48,
+   "State": "West Virginia",
+   "Summary": "Surface Water Rights Doctrine: Riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): No limit\n\nGroundwater Rights Doctrine: Reasonable use\nGrundwater Rights Reporting/Permit Threshold (gpd): No limit\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nWest Virginia Division of Environmental Protection\nhttp://www.dep.wv.gov/"
+ },
+ {
+   "ID": 49,
+   "State": "Wisconsin",
+   "Summary": "Surface Water Rights Doctrine: Regulated riparian\nSurface Water Rights Reporting/Permit Threshold (gpd): 100,000\n\nGroundwater Rights Doctrine: Beneficial purpose\nGrundwater Rights Reporting/Permit Threshold (gpd): 100,000\n\nUndergound Injection Control Authority\nClass I Hazardous: Banned\nClass I Non-hazardous: Banned\nClass II: Banned\n\nKey Regulatory Agencies:\nWisconsin Department of Natural Resources\nhttp://dnr.wi.gov/"
+ },
+ {
+   "ID": 50,
+   "State": "Wyoming",
+   "Summary": "Surface Water Rights Doctrine: Prior appropriation\nSurface Water Rights Reporting/Permit Threshold (gpd): 0\n\nGroundwater Rights Doctrine: Prior appropriation\nGrundwater Rights Reporting/Permit Threshold (gpd): 0\n\nUndergound Injection Control Authority\nClass I Hazardous: State\nClass I Non-hazardous: State\nClass II: State\n\nKey Regulatory Agencies:\nWyoming Department of Environmental Quality\nhttp://deq.wyoming.gov/\n\nWyoming Oil and Gas Conservation Commission\nhttp://wogcc.wyo.gov/\n\nWyoming State Engineer's Office\nhttps://sites.google.com/a/wyo.gov/seo/"
+ }
+]
+}
